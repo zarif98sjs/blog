@@ -2,25 +2,26 @@ baseurl = "/"
 languageCode = "en-us"
 theme = "terminal"
 paginate = 5
+disqusShortname = "zar"
 
 [params]
-  # dir name of your blog content (default is `content/posts`)
-  contentTypeName = "posts"
+  # dir name of your blog content (default is `content/post`)
+   contentTypeName = "blog"
 
   # ["orange", "blue", "red", "green", "pink"]
   themeColor = "orange"
 
   # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 2
+  showMenuItems = 5
 
   # show selector to switch language
   showLanguageSelector = false
 
   # set theme to full screen width
-  fullWidthTheme = false
+  fullWidthTheme = true
 
   # center theme with default width
-  centerTheme = false
+  centerTheme = true
 
   # set a custom favicon (default is a `themeColor` square)
   # favicon = "favicon.ico"
@@ -28,6 +29,8 @@ paginate = 5
   # set all headings to their default size (depending on browser settings)
   # it's set to `true` by default
   # oneHeadingSize = false
+
+
 
 [params.twitter]
   # set Twitter handles for Twitter cards
@@ -39,8 +42,8 @@ paginate = 5
 [languages]
   [languages.en]
     languageName = "English"
-    title = "Terminal"
-    subtitle = "A simple, retro theme for Hugo"
+    title = "zarif98sjs"
+    subtitle = "zarif98sjs"
     owner = ""
     keywords = ""
     copyright = ""
@@ -49,15 +52,32 @@ paginate = 5
     readOtherPosts = "Read other posts"
 
     [languages.en.params.logo]
-      logoText = "Terminal"
+      logoText = "zarif98sjs"
       logoHomeLink = "/"
 
     [languages.en.menu]
       [[languages.en.menu.main]]
         identifier = "about"
         name = "About"
-        url = "/about"
+        url = ""
+        weight = 1
       [[languages.en.menu.main]]
-        identifier = "showcase"
-        name = "Showcase"
-        url = "/showcase"
+        identifier = "projects"
+        name = "Projects"
+        url = ""
+        weight = 2
+      [[languages.en.menu.main]]
+        identifier = "skills"
+        name = "Skills"
+        url = ""
+        weight = 3
+      [[languages.en.menu.main]]
+        identifier = "memento"
+        name = "Memento"
+        url = ""
+        weight = 4
+      [[languages.en.menu.main]]
+        identifier = "blog"
+        name = "Blog"
+        url = "/blog"
+        weight = 5
