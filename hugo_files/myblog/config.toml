@@ -6,7 +6,7 @@ disqusShortname = "zar"
 
 [params]
   # dir name of your blog content (default is `content/posts`)
-  contentTypeName = "blog"
+   contentTypeName = "blog"
 
   # ["orange", "blue", "red", "green", "pink"]
   themeColor = "orange"
