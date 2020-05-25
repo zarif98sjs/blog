@@ -5,7 +5,7 @@ paginate = 5
 disqusShortname = "zar"
 
 [params]
-  # dir name of your blog content (default is `content/post`)
+  # dir name of your blog content (default is `content/posts`)
    contentTypeName = "blog"
 
   # ["orange", "blue", "red", "green", "pink"]
@@ -74,7 +74,7 @@ disqusShortname = "zar"
       [[languages.en.menu.main]]
         identifier = "memento"
         name = "Memento"
-        url = ""
+        url = "/memento"
         weight = 4
       [[languages.en.menu.main]]
         identifier = "blog"

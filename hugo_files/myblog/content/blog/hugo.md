@@ -1,10 +1,10 @@
 +++
 title = "Creating your firt website using Hugo & GitHub Pages"
-date = "2019-05-25"
-author = "Lorem Ipsum"
+date = "2020-05-25"
+author = "~10 min read"
 tags = ["website", "hugo" ,"github pages"]
-cover = "/img/hello.jpg"
-description = "Making websites is fun agaian !"
+cover = "/img/hugocov.png"
+description = "Making websites is fun again !"
 +++
 
 While creating a website from scratch and deploying it can seem daunting at the first glance , using the help of frameworks like `Hugo` you can build your static websites for your personal use / blog / porfolio and deploy it using `GitHub Pages` . Making websites is fun again ! 
