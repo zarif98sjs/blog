@@ -45,9 +45,9 @@ void multiply(int a[N][N], int b[N][N])
         }
     }
 
-//    for (int i=0; i<N; i++)
-//        for (int j=0; j<N; j++)
-//            a[i][j] = mul[i][j];
+    //    for (int i=0; i<N; i++)
+    //        for (int j=0; j<N; j++)
+    //            a[i][j] = mul[i][j];
 
     memcpy(a,mul,sizeof mul);
 }
@@ -88,7 +88,7 @@ int main()
     int tc;
     scanf("%d",&tc);
 
-    for(int i=0;i<N;i++)
+    for(int i=0; i<N; i++)
         unit[i][i]=1;
 
     for(int q=1; q<=tc; q++)
@@ -100,12 +100,12 @@ int main()
         base[0][0]=a;
         base[0][2]=b;
 
-//        for (int i=0; i<N; i++)
-//        {
-//            for (int j=0; j<N; j++)
-//                cout<<base[i][j]<<" ";
-//            cout<<endl;
-//        }
+        //        for (int i=0; i<N; i++)
+        //        {
+        //            for (int j=0; j<N; j++)
+        //                cout<<base[i][j]<<" ";
+        //            cout<<endl;
+        //        }
 
 
 

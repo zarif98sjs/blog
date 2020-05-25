@@ -7,7 +7,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 <meta name="description" content="Idea  Matrix Exponential
- Matrix Expo Resource One thing to notice is that here the power will be n-2  /* Which of the favors of your Lord will you deny? */ #include&amp;lt;bits/stdc&#43;&#43;.h&amp;gt;using namespace std; #define MAX 100050  #define LL long long #define PII pair&amp;lt;int,int&amp;gt; #define MP make_pair #define F first #define S second  #define N 4  int base[4][4] = {{-1,0,-1,1},{1,0,0,0},{0,1,0,0},{0,0,0,1}}, unit[4][4]; int mod=10007; void multiply(int a[N][N], int b[N][N]) { int mul[N][N]; for (int i = 0; i &amp;lt; N; i&#43;&#43;) { for (int j = 0; j &amp;lt; N; j&#43;&#43;) { mul[i][j] = 0; for (int k = 0; k &amp;lt; N; k&#43;&#43;) mul[i][j] &#43;= (a[i][k]*b[k][j])%mod; } } // for (int i=0; i&amp;lt;N; i&#43;&#43;) // for (int j=0; j&amp;lt;N; j&#43;&#43;) // a[i][j] = mul[i][j];  memcpy(a,mul,sizeof mul); } void fast_mat_expo(int r[N][N],int n) { int b[4][4]; memcpy(r, unit, sizeof unit); memcpy(b, base, sizeof base); while(n&amp;gt;0) { if(n&amp;amp;1)//odd  multiply(r,b); n&amp;gt;&amp;gt;=1; multiply(b,b); } } int powa(int x,int y) { if(y==0) return 1; int temp = powa(x,y/2); if((y&amp;amp;1)==0) // (y%2==0) // LL korle 1LL  return temp*temp; else return x*temp*temp; } int main() { //freopen(&amp;#34;LightOj1093." />
+ Matrix Expo Resource One thing to notice is that here the power will be n-2  /* Which of the favors of your Lord will you deny? */ #include&amp;lt;bits/stdc&#43;&#43;.h&amp;gt;using namespace std; #define MAX 100050  #define LL long long #define PII pair&amp;lt;int,int&amp;gt; #define MP make_pair #define F first #define S second  #define N 4  int base[4][4] = {{-1,0,-1,1},{1,0,0,0},{0,1,0,0},{0,0,0,1}}, unit[4][4]; int mod=10007; void multiply(int a[N][N], int b[N][N]) { int mul[N][N]; for (int i = 0; i &amp;lt; N; i&#43;&#43;) { for (int j = 0; j &amp;lt; N; j&#43;&#43;) { mul[i][j] = 0; for (int k = 0; k &amp;lt; N; k&#43;&#43;) mul[i][j] &#43;= (a[i][k]*b[k][j])%mod; } } // for (int i=0; i&amp;lt;N; i&#43;&#43;)  // for (int j=0; j&amp;lt;N; j&#43;&#43;)  // a[i][j] = mul[i][j];  memcpy(a,mul,sizeof mul); } void fast_mat_expo(int r[N][N],int n) { int b[4][4]; memcpy(r, unit, sizeof unit); memcpy(b, base, sizeof base); while(n&amp;gt;0) { if(n&amp;amp;1)//odd  multiply(r,b); n&amp;gt;&amp;gt;=1; multiply(b,b); } } int powa(int x,int y) { if(y==0) return 1; int temp = powa(x,y/2); if((y&amp;amp;1)==0) // (y%2==0) // LL korle 1LL  return temp*temp; else return x*temp*temp; } int main() { //freopen(&amp;#34;LightOj1093." />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
 <link rel="canonical" href="/blog/lightoj1096/" />
@@ -218,9 +218,9 @@
         }
     }
 
-<span style="color:#75715e">//    for (int i=0; i&lt;N; i++)
-</span><span style="color:#75715e">//        for (int j=0; j&lt;N; j++)
-</span><span style="color:#75715e">//            a[i][j] = mul[i][j];
+    <span style="color:#75715e">//    for (int i=0; i&lt;N; i++)
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">//        for (int j=0; j&lt;N; j++)
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">//            a[i][j] = mul[i][j];
 </span><span style="color:#75715e"></span>
     memcpy(a,mul,<span style="color:#66d9ef">sizeof</span> mul);
 }
@@ -261,7 +261,7 @@
     <span style="color:#66d9ef">int</span> tc;
     scanf(<span style="color:#e6db74">&#34;%d&#34;</span>,<span style="color:#f92672">&amp;</span>tc);
 
-    <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>;i<span style="color:#f92672">&lt;</span>N;i<span style="color:#f92672">++</span>)
+    <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>; i<span style="color:#f92672">&lt;</span>N; i<span style="color:#f92672">++</span>)
         unit[i][i]<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>;
 
     <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> q<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>; q<span style="color:#f92672">&lt;=</span>tc; q<span style="color:#f92672">++</span>)
@@ -273,12 +273,12 @@
         base[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">0</span>]<span style="color:#f92672">=</span>a;
         base[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">2</span>]<span style="color:#f92672">=</span>b;
 
-<span style="color:#75715e">//        for (int i=0; i&lt;N; i++)
-</span><span style="color:#75715e">//        {
-</span><span style="color:#75715e">//            for (int j=0; j&lt;N; j++)
-</span><span style="color:#75715e">//                cout&lt;&lt;base[i][j]&lt;&lt;&#34; &#34;;
-</span><span style="color:#75715e">//            cout&lt;&lt;endl;
-</span><span style="color:#75715e">//        }
+        <span style="color:#75715e">//        for (int i=0; i&lt;N; i++)
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">//        {
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">//            for (int j=0; j&lt;N; j++)
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">//                cout&lt;&lt;base[i][j]&lt;&lt;&#34; &#34;;
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">//            cout&lt;&lt;endl;
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">//        }
 </span><span style="color:#75715e"></span>
 
 
