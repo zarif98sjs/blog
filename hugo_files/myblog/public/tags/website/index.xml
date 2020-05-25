@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>website on zarif98sjs</title>
+    <link>/tags/website/</link>
+    <description>Recent content in website on zarif98sjs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 25 May 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/website/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Creating your firt website using Hugo &amp; GitHub Pages</title>
+      <link>/blog/hugo/</link>
+      <pubDate>Mon, 25 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/hugo/</guid>
+      <description>While creating a website from scratch and deploying it can seem daunting at the first glance , using the help of frameworks like Hugo you can build your static websites for your personal use / blog / porfolio and deploy it using GitHub Pages . Making websites is fun again !
+Here , I will give a step by step process to build your website and to deploy it . Bear with me till the end :p</description>
+    </item>
+    
+  </channel>
+</rss>
