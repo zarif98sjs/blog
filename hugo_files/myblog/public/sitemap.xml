@@ -33,6 +33,11 @@
   </url>
   
   <url>
+    <loc>/</loc>
+    <lastmod>2020-05-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/articulation/</loc>
     <lastmod>2020-05-12T00:00:00+00:00</lastmod>
   </url>
@@ -128,7 +133,22 @@
   </url>
   
   <url>
+    <loc>/tags/codesamurai/</loc>
+    <lastmod>2019-05-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/memento/hackathondu2019/</loc>
+    <lastmod>2019-05-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/du/</loc>
+    <lastmod>2019-05-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/hackathon/</loc>
     <lastmod>2019-05-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -180,31 +200,6 @@
   <url>
     <loc>/tags/csefest2k14/</loc>
     <lastmod>2019-04-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/hackathon/</loc>
-    <lastmod>2019-04-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/about/</loc>
-    <lastmod>2019-01-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/hello/</loc>
-    <lastmod>2019-01-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2019-01-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2019-01-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -280,11 +275,6 @@
   <url>
     <loc>/blog/lightoj1043/</loc>
     <lastmod>2018-11-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/showcase/</loc>
-    <lastmod>2018-07-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
