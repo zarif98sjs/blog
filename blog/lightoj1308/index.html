@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>LightOj 1308 (Ant Network) :: zarif98sjs — zarif98sjs</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="Idea  Articulation Point
+Firstly there are 2 case :
+ No Articulation point .
+Then there must be at least 2 shaft such that if one fails , other works Articulation point is present in the graph.   No articulation point can have shaft in order to minimize the number of shafts. So , delete the articulation points and make a new Graph without them. Create a compressed SCC graph from that." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/blog/lightoj1308/" />
+
+
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/img/favicon/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  <meta name="twitter:site" content="" />
+
+<meta name="twitter:creator" content="~7 min read" />
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="LightOj 1308 (Ant Network) :: zarif98sjs">
+<meta property="og:description" content="Ant Network" />
+<meta property="og:url" content="/blog/lightoj1308/" />
+<meta property="og:site_name" content="LightOj 1308 (Ant Network)" />
+
+  
+    <meta property="og:image" content="/img/favicon/orange.png">
+  
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+  <meta property="article:published_time" content="2020-05-12 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container full headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="https://zarif98sjs.github.io/">
+  <div class="logo">
+    zarif98sjs
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="https://zarif98sjs.github.io/about/">About</a></li>
+        
+      
+        
+          <li><a href="https://zarif98sjs.github.io/projects/">Projects</a></li>
+        
+      
+        
+          <li><a href="https://zarif98sjs.github.io/skills/">Skills</a></li>
+        
+      
+        
+          <li><a href="/memento">Memento</a></li>
+        
+      
+        
+          <li><a href="/blog">Blog</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="https://zarif98sjs.github.io/about/">About</a></li>
+      
+    
+      
+        <li><a href="https://zarif98sjs.github.io/projects/">Projects</a></li>
+      
+    
+      
+        <li><a href="https://zarif98sjs.github.io/skills/">Skills</a></li>
+      
+    
+      
+        <li><a href="/memento">Memento</a></li>
+      
+    
+      
+        <li><a href="/blog">Blog</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/blog/lightoj1308/">LightOj 1308 (Ant Network)</a></h1>
+  <div class="post-meta">
+      
+    <span class="post-date">
+      2020-05-12
+    </span>
+    
+    
+    <span class="post-author">::
+      ~7 min read
+    </span>
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="/tags/lightoj/">lightoj</a>&nbsp;
+    
+    #<a href="/tags/cp/">cp</a>&nbsp;
+    
+    #<a href="/tags/problem-solving/">problem solving</a>&nbsp;
+    
+    #<a href="/tags/articulation/">articulation</a>&nbsp;
+    
+    #<a href="/tags/graph-theory/">graph theory</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  <div class="post-content"><div>
+        <h1 id="idea">Idea<a href="#idea" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<hr>
+<p>Articulation Point<br>
+Firstly there are 2 case :</p>
+<ol>
+<li>No Articulation point .<br>
+Then there must be at least 2 shaft such that if one fails , other works</li>
+<li>Articulation point is present in the graph.</li>
+</ol>
+<ul>
+<li>No articulation point can have shaft in order to minimize the number of shafts.</li>
+<li>So , delete the articulation points and make a new Graph without them.</li>
+<li>Create a compressed SCC graph from that.</li>
+<li>If a SCC is connected to multiple Articulation Point , then it can use other shaft connected through one other articulation point .
+So , we only need to consider SCC&rsquo;s which are connected to less than 2 Articulation point.</li>
+<li>For the number of ways , one can put the shaft in any of the nodes in a SCC . So , the number of way is basically the multiplication of the sizes of all valid SCCs.<br>
+Rest of the implementation is trivial.</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp">
+<span style="color:#75715e">/** Which of the favors of your Lord will you deny ? **/</span>
+<span style="color:#75715e">/** Which of the favors of your Lord will you deny ? **/</span>
+
+<span style="color:#75715e">#include</span><span style="color:#75715e">&lt;bits/stdc++.h&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
+
+<span style="color:#75715e">#define LL long long
+</span><span style="color:#75715e">#define PII pair&lt;int,int&gt;
+</span><span style="color:#75715e">#define PLL pair&lt;LL,LL&gt;
+</span><span style="color:#75715e">#define MP make_pair
+</span><span style="color:#75715e">#define F first
+</span><span style="color:#75715e">#define S second
+</span><span style="color:#75715e">#define INF INT_MAX
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">#define ALL(x) (x).begin(), (x).end()
+</span><span style="color:#75715e">#define DBG(x) cerr &lt;&lt; __LINE__ &lt;&lt; &#34; says: &#34; &lt;&lt; #x &lt;&lt; &#34; = &#34; &lt;&lt; (x) &lt;&lt; endl
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;ext/pb_ds/assoc_container.hpp&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;ext/pb_ds/tree_policy.hpp&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> __gnu_pbds;
+
+<span style="color:#66d9ef">template</span><span style="color:#f92672">&lt;</span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TIn</span><span style="color:#f92672">&gt;</span>
+<span style="color:#66d9ef">using</span> indexed_set <span style="color:#f92672">=</span> tree<span style="color:#f92672">&lt;</span>
+                    TIn, null_type, less<span style="color:#f92672">&lt;</span>TIn<span style="color:#f92672">&gt;</span>,
+                    rb_tree_tag, tree_order_statistics_node_update<span style="color:#f92672">&gt;</span>;
+
+<span style="color:#75715e">/*
+</span><span style="color:#75715e">PBDS
+</span><span style="color:#75715e">-------------------------------------------------
+</span><span style="color:#75715e">1) insert(value)
+</span><span style="color:#75715e">2) erase(value)
+</span><span style="color:#75715e">3) order_of_key(value) // 0 based indexing
+</span><span style="color:#75715e">4) *find_by_order(position) // 0 based indexing
+</span><span style="color:#75715e">*/</span>
+
+<span style="color:#66d9ef">inline</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">optimizeIO</span>()
+{
+    ios_base<span style="color:#f92672">::</span>sync_with_stdio(false);
+    cin.tie(NULL);
+}
+
+<span style="color:#66d9ef">const</span> <span style="color:#66d9ef">int</span> nmax <span style="color:#f92672">=</span> <span style="color:#ae81ff">1e4</span><span style="color:#f92672">+</span><span style="color:#ae81ff">7</span>;
+<span style="color:#66d9ef">const</span> LL LINF <span style="color:#f92672">=</span> <span style="color:#ae81ff">1e17</span>;
+
+string <span style="color:#a6e22e">to_str</span>(LL x)
+{
+    stringstream ss;
+    ss<span style="color:#f92672">&lt;&lt;</span>x;
+    <span style="color:#66d9ef">return</span> ss.str();
+}
+
+<span style="color:#75715e">//bool cmp(const PII &amp;A,const PII &amp;B)
+</span><span style="color:#75715e">//{
+</span><span style="color:#75715e">//
+</span><span style="color:#75715e">//}
+</span><span style="color:#75715e"></span>
+vector<span style="color:#f92672">&lt;</span>PII<span style="color:#f92672">&gt;</span>edges;
+
+vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span>adj[nmax];
+vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span>newGraph[nmax];
+vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">bool</span><span style="color:#f92672">&gt;</span>visited;
+vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span>SCCMap;
+
+vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> discov; <span style="color:#75715e">/** Discovery time in DFS **/</span>
+vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> low; <span style="color:#75715e">/** min(all discovery time of subtree of a vertex u including the back-edge ancestors) **/</span>
+vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">bool</span><span style="color:#f92672">&gt;</span> isArticulationPoint;
+<span style="color:#66d9ef">int</span> timer;
+<span style="color:#66d9ef">int</span> scc <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+<span style="color:#66d9ef">int</span> numArticulationPoint <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">initialize</span>()
+{
+    timer <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+    visited.assign(nmax,false);
+    SCCMap.assign(nmax,<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>);
+    discov.assign(nmax,<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>);
+    low.assign(nmax,<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>);
+    isArticulationPoint.assign(nmax,false);
+    edges.clear();
+
+    <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>; i<span style="color:#f92672">&lt;</span>nmax; i<span style="color:#f92672">++</span>)
+        adj[i].clear(), newGraph[i].clear();
+}
+
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">dfs</span>(<span style="color:#66d9ef">int</span> v,<span style="color:#66d9ef">int</span> p)
+{
+    visited[v] <span style="color:#f92672">=</span> true;
+    discov[v] <span style="color:#f92672">=</span> low[v] <span style="color:#f92672">=</span> timer<span style="color:#f92672">++</span>;
+    <span style="color:#66d9ef">int</span> child <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+
+    <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> next:adj[v])
+    {
+        child<span style="color:#f92672">++</span>;
+
+        <span style="color:#66d9ef">if</span>(next<span style="color:#f92672">==</span>p)
+            <span style="color:#66d9ef">continue</span>;
+        <span style="color:#66d9ef">if</span>(visited[next])
+            low[v] <span style="color:#f92672">=</span> min(low[v],discov[next]);
+        <span style="color:#66d9ef">else</span>
+        {
+            dfs(next,v);
+            low[v] <span style="color:#f92672">=</span> min(low[v],low[next]);
+
+            <span style="color:#66d9ef">if</span>(child<span style="color:#f92672">&gt;</span><span style="color:#ae81ff">1</span> <span style="color:#f92672">&amp;&amp;</span> p<span style="color:#f92672">==-</span><span style="color:#ae81ff">1</span>)
+                isArticulationPoint[v] <span style="color:#f92672">=</span> true, numArticulationPoint<span style="color:#f92672">++</span>;  <span style="color:#75715e">/** ROOT **/</span>
+
+            <span style="color:#66d9ef">if</span>(discov[v]<span style="color:#f92672">&lt;=</span>low[next] <span style="color:#f92672">&amp;&amp;</span> p<span style="color:#f92672">!=-</span><span style="color:#ae81ff">1</span>)
+                isArticulationPoint[v] <span style="color:#f92672">=</span> true, numArticulationPoint<span style="color:#f92672">++</span>;
+        }
+    }
+}
+
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">scc_dfs</span>(<span style="color:#66d9ef">int</span> u)
+{
+    visited[u] <span style="color:#f92672">=</span> true;
+    SCCMap[u] <span style="color:#f92672">=</span> scc;
+
+    <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> next:newGraph[u])
+    {
+        <span style="color:#66d9ef">if</span>(<span style="color:#f92672">!</span>visited[next])
+            scc_dfs(next);
+    }
+}
+
+<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>()
+{
+    <span style="color:#75715e">//freopen(&#34;out.txt&#34;,&#34;w&#34;,stdout);
+</span><span style="color:#75715e"></span>
+    optimizeIO();
+
+    <span style="color:#66d9ef">int</span> tc;
+    cin<span style="color:#f92672">&gt;&gt;</span>tc;
+
+    <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> q<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>; q<span style="color:#f92672">&lt;=</span>tc; q<span style="color:#f92672">++</span>)
+    {
+        initialize();
+
+        <span style="color:#66d9ef">int</span> n,m;
+        cin<span style="color:#f92672">&gt;&gt;</span>n<span style="color:#f92672">&gt;&gt;</span>m;
+
+        <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>; i<span style="color:#f92672">&lt;=</span>m; i<span style="color:#f92672">++</span>)
+        {
+            <span style="color:#66d9ef">int</span> a,b;
+            cin<span style="color:#f92672">&gt;&gt;</span>a<span style="color:#f92672">&gt;&gt;</span>b;
+            adj[a].push_back(b);
+            adj[b].push_back(a);
+
+            edges.push_back({a,b});
+        }
+
+        numArticulationPoint <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+
+        <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>; i<span style="color:#f92672">&lt;</span>n; i<span style="color:#f92672">++</span>)
+            <span style="color:#66d9ef">if</span>(<span style="color:#f92672">!</span>visited[i])
+                dfs(i,<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>);
+
+        <span style="color:#75715e">//DBG(numArticulationPoint);
+</span><span style="color:#75715e"></span>
+        <span style="color:#66d9ef">if</span>(numArticulationPoint<span style="color:#f92672">==</span><span style="color:#ae81ff">0</span>)
+        {
+            cout<span style="color:#f92672">&lt;&lt;</span><span style="color:#e6db74">&#34;Case &#34;</span><span style="color:#f92672">&lt;&lt;</span>q<span style="color:#f92672">&lt;&lt;</span><span style="color:#e6db74">&#34;: &#34;</span>;
+            LL ans <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>;
+            LL way <span style="color:#f92672">=</span> (n<span style="color:#f92672">*</span>(n<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>))<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>;
+
+            cout<span style="color:#f92672">&lt;&lt;</span>ans<span style="color:#f92672">&lt;&lt;</span><span style="color:#e6db74">&#34; &#34;</span><span style="color:#f92672">&lt;&lt;</span>way<span style="color:#f92672">&lt;&lt;</span>endl;
+            <span style="color:#66d9ef">continue</span>;
+        }
+
+        <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">auto</span> e:edges)
+        {
+            <span style="color:#66d9ef">if</span>(isArticulationPoint[e.F] <span style="color:#f92672">||</span> isArticulationPoint[e.S])
+                <span style="color:#66d9ef">continue</span>;
+            newGraph[e.F].push_back(e.S);
+            newGraph[e.S].push_back(e.F);
+        }
+
+        visited.assign(nmax,false);
+
+        scc <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+        <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>; i<span style="color:#f92672">&lt;</span>n; i<span style="color:#f92672">++</span>)
+        {
+            <span style="color:#66d9ef">if</span>(isArticulationPoint[i])
+                <span style="color:#66d9ef">continue</span>;
+
+            <span style="color:#66d9ef">if</span>(<span style="color:#f92672">!</span>visited[i])
+            {
+                scc_dfs(i);
+                scc<span style="color:#f92672">++</span>;
+            }
+        }
+
+        <span style="color:#75715e">//DBG(scc);
+</span><span style="color:#75715e"></span>
+        vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span>cntInSCC(scc,<span style="color:#ae81ff">0</span>);
+
+        <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>; i<span style="color:#f92672">&lt;</span>n; i<span style="color:#f92672">++</span>)
+            <span style="color:#66d9ef">if</span>(SCCMap[i]<span style="color:#f92672">!=-</span><span style="color:#ae81ff">1</span>) cntInSCC[SCCMap[i]]<span style="color:#f92672">++</span>;
+
+        set<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> numArticulationPointInComp[scc];
+
+        <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">auto</span> e:edges)
+        {
+            <span style="color:#66d9ef">if</span>(isArticulationPoint[e.F] <span style="color:#f92672">&amp;&amp;</span> isArticulationPoint[e.S])
+                <span style="color:#66d9ef">continue</span>;
+            <span style="color:#66d9ef">if</span>(SCCMap[e.F]<span style="color:#f92672">==</span>SCCMap[e.S])
+                <span style="color:#66d9ef">continue</span>;
+
+            <span style="color:#66d9ef">int</span> ap <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, op <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>;
+
+            <span style="color:#66d9ef">if</span>(isArticulationPoint[e.F])
+                ap <span style="color:#f92672">=</span> e.F, op <span style="color:#f92672">=</span> e.S;
+            <span style="color:#66d9ef">if</span>(isArticulationPoint[e.S])
+                ap <span style="color:#f92672">=</span> e.S, op <span style="color:#f92672">=</span> e.F;
+
+            numArticulationPointInComp[SCCMap[op]].insert(ap);
+        }
+
+        LL ans <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+        <span style="color:#66d9ef">unsigned</span> LL way <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+
+        <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>;i<span style="color:#f92672">&lt;</span>scc;i<span style="color:#f92672">++</span>)
+        {
+            <span style="color:#66d9ef">if</span>(numArticulationPointInComp[i].size()<span style="color:#f92672">&lt;=</span><span style="color:#ae81ff">1</span>)
+                ans<span style="color:#f92672">++</span> , way <span style="color:#f92672">*=</span> cntInSCC[i];
+        }
+
+        cout<span style="color:#f92672">&lt;&lt;</span><span style="color:#e6db74">&#34;Case &#34;</span><span style="color:#f92672">&lt;&lt;</span>q<span style="color:#f92672">&lt;&lt;</span><span style="color:#e6db74">&#34;: &#34;</span>;
+        cout<span style="color:#f92672">&lt;&lt;</span>ans<span style="color:#f92672">&lt;&lt;</span><span style="color:#e6db74">&#34; &#34;</span><span style="color:#f92672">&lt;&lt;</span>way<span style="color:#f92672">&lt;&lt;</span>endl;
+    }
+
+
+    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+}
+
+</code></pre></div>
+      </div></div>
+
+  
+  
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other posts</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        <span class="button previous">
+            <a href="/blog/hugo/">
+                <span class="button__icon">←</span>
+                <span class="button__text">Creating your firt website using Hugo &amp; GitHub Pages</span>
+            </a>
+        </span>
+        
+        
+        <span class="button next">
+            <a href="/blog/lightoj1291/">
+                <span class="button__text">LightOj 1291 (Real Life Traffic)</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
+
+  
+
+  
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "zar" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span> Md. Zarif Ul ALam © 2020 </span>
+    
+        
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

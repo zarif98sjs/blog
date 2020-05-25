@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>LightOj 1005 (Rooks) :: zarif98sjs — zarif98sjs</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="Idea 1   Put a rook in row 1 , so there are c ways (c columns) to do that [c * shomadhan(r-1,c-1,k-1)] and don&amp;rsquo;t put a rook in row 1 , so there are r-1 rows [shomadhan(r-1,c,k)] So , ans = c * shomadhan(r-1,c-1,k-1) &#43; shomadhan(r-1,c,k)  Idea 2   take k row from n row (nCk) take k col from n col (nCk) how many ways k rook arrange among themselves (k!" />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/blog/lightoj1005/" />
+
+
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/img/favicon/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  <meta name="twitter:site" content="" />
+
+<meta name="twitter:creator" content="~5 min read" />
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="LightOj 1005 (Rooks) :: zarif98sjs">
+<meta property="og:description" content="Rooks" />
+<meta property="og:url" content="/blog/lightoj1005/" />
+<meta property="og:site_name" content="LightOj 1005 (Rooks)" />
+
+  
+    <meta property="og:image" content="/img/favicon/orange.png">
+  
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+  <meta property="article:published_time" content="2018-11-25 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container full headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="https://zarif98sjs.github.io/">
+  <div class="logo">
+    zarif98sjs
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="https://zarif98sjs.github.io/about/">About</a></li>
+        
+      
+        
+          <li><a href="https://zarif98sjs.github.io/projects/">Projects</a></li>
+        
+      
+        
+          <li><a href="https://zarif98sjs.github.io/skills/">Skills</a></li>
+        
+      
+        
+          <li><a href="/memento">Memento</a></li>
+        
+      
+        
+          <li><a href="/blog">Blog</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="https://zarif98sjs.github.io/about/">About</a></li>
+      
+    
+      
+        <li><a href="https://zarif98sjs.github.io/projects/">Projects</a></li>
+      
+    
+      
+        <li><a href="https://zarif98sjs.github.io/skills/">Skills</a></li>
+      
+    
+      
+        <li><a href="/memento">Memento</a></li>
+      
+    
+      
+        <li><a href="/blog">Blog</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/blog/lightoj1005/">LightOj 1005 (Rooks)</a></h1>
+  <div class="post-meta">
+      
+    <span class="post-date">
+      2018-11-25
+    </span>
+    
+    
+    <span class="post-author">::
+      ~5 min read
+    </span>
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="/tags/lightoj/">lightoj</a>&nbsp;
+    
+    #<a href="/tags/cp/">cp</a>&nbsp;
+    
+    #<a href="/tags/problem-solving/">problem solving</a>&nbsp;
+    
+    #<a href="/tags/recursion/">recursion</a>&nbsp;
+    
+    #<a href="/tags/combinatorics/">combinatorics</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  <div class="post-content"><div>
+        <h1 id="idea-1">Idea 1<a href="#idea-1" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<hr>
+<ul>
+<li>Put a rook in row 1 , so there are c ways (c columns) to do that [c * shomadhan(r-1,c-1,k-1)]</li>
+<li>and don&rsquo;t put a rook in row 1 , so there are r-1 rows [shomadhan(r-1,c,k)]</li>
+<li>So , ans = c * shomadhan(r-1,c-1,k-1) + shomadhan(r-1,c,k)</li>
+</ul>
+<h1 id="idea-2">Idea 2<a href="#idea-2" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<hr>
+<ul>
+<li>take k row from n row (nCk)</li>
+<li>take k col from n col (nCk)</li>
+<li>how many ways k rook arrange among themselves (k!)</li>
+</ul>
+<p>ans = nCk * nCk * k!;</p>
+<p>comb[n][k] = comb[n-1][k] + comb[n-1][k-1]</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp">
+<span style="color:#75715e">/*Which of the favors of your Lord will you deny ?*/</span>
+
+<span style="color:#75715e">#include</span><span style="color:#75715e">&lt;bits/stdc++.h&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
+
+<span style="color:#75715e">#define LL long long
+</span><span style="color:#75715e">#define PII pair&lt;int,int&gt;
+</span><span style="color:#75715e">#define LPII pair&lt;LL, pair&lt;int,int&gt; &gt;
+</span><span style="color:#75715e">#define MP make_pair
+</span><span style="color:#75715e">#define F first
+</span><span style="color:#75715e">#define S second
+</span><span style="color:#75715e">#define LINF LLONG_MAX
+</span><span style="color:#75715e"></span>
+
+LL <span style="color:#a6e22e">shomadhan</span>(LL r,LL c,LL k)
+{
+   <span style="color:#66d9ef">if</span>(k <span style="color:#f92672">&gt;</span> r <span style="color:#f92672">||</span> k <span style="color:#f92672">&gt;</span> c)
+       <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+   <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span>(k<span style="color:#f92672">==</span>(LL)<span style="color:#ae81ff">0</span>)
+       <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span>;
+   <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span>(r<span style="color:#f92672">==</span>(LL)<span style="color:#ae81ff">1</span>)
+       <span style="color:#66d9ef">return</span> c;
+   <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">return</span> c<span style="color:#f92672">*</span>shomadhan(r<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>,c<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>,k<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">+</span>shomadhan(r<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>,c,k);
+
+
+}
+
+<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>()
+{
+   <span style="color:#75715e">//freopen(&#34;LightOj1099.txt&#34;,&#34;w&#34;,stdout);
+</span><span style="color:#75715e"></span>
+   <span style="color:#66d9ef">int</span> tc;
+   scanf(<span style="color:#e6db74">&#34;%d&#34;</span>,<span style="color:#f92672">&amp;</span>tc);
+
+   <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>; i<span style="color:#f92672">&lt;=</span>tc; i<span style="color:#f92672">++</span>)
+   {
+       LL n,k;
+       scanf(<span style="color:#e6db74">&#34;%lld %lld&#34;</span>,<span style="color:#f92672">&amp;</span>n,<span style="color:#f92672">&amp;</span>k);
+
+       LL ans<span style="color:#f92672">=</span>shomadhan(n,n,k);
+
+       printf(<span style="color:#e6db74">&#34;Case %d: %lld</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>,i,ans);
+   }
+
+   <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+}
+
+</code></pre></div>
+      </div></div>
+
+  
+  
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other posts</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        <span class="button previous">
+            <a href="/blog/lightoj1307/">
+                <span class="button__icon">←</span>
+                <span class="button__text">LightOj 1307 (Counting Triangles)</span>
+            </a>
+        </span>
+        
+        
+        <span class="button next">
+            <a href="/blog/lightoj1034/">
+                <span class="button__text">LightOj 1034 (Hit the Light Switches)</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
+
+  
+
+  
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "zar" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span> Md. Zarif Ul ALam © 2020 </span>
+    
+        
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

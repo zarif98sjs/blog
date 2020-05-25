@@ -53,23 +53,23 @@ disqusShortname = "zar"
 
     [languages.en.params.logo]
       logoText = "zarif98sjs"
-      logoHomeLink = "/"
+      logoHomeLink = "https://zarif98sjs.github.io/"
 
     [languages.en.menu]
       [[languages.en.menu.main]]
         identifier = "about"
         name = "About"
-        url = ""
+        url = "https://zarif98sjs.github.io/about/"
         weight = 1
       [[languages.en.menu.main]]
         identifier = "projects"
         name = "Projects"
-        url = ""
+        url = "https://zarif98sjs.github.io/projects/"
         weight = 2
       [[languages.en.menu.main]]
         identifier = "skills"
         name = "Skills"
-        url = ""
+        url = "https://zarif98sjs.github.io/skills/"
         weight = 3
       [[languages.en.menu.main]]
         identifier = "memento"
