@@ -3,7 +3,7 @@ title = "BUET CSE Fest Hackathon 2019"
 date = "2019-04-20"
 author = "~10 min read"
 tags = ["hackathon", "buet" ,"csefest2k14"]
-cover = "/img/hackathonbuet2019.jpg"
+cover = "/blog/img/hackathonbuet2019.jpg"
 description = "First ever hackathon for us . Ended up becoming runners-up . What an experience it was ! "
 +++
 
