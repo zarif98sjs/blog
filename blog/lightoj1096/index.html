@@ -10,21 +10,21 @@
  Matrix Expo Resource One thing to notice is that here the power will be n-2  /* Which of the favors of your Lord will you deny? */ #include&amp;lt;bits/stdc&#43;&#43;.h&amp;gt;using namespace std; #define MAX 100050  #define LL long long #define PII pair&amp;lt;int,int&amp;gt; #define MP make_pair #define F first #define S second  #define N 4  int base[4][4] = {{-1,0,-1,1},{1,0,0,0},{0,1,0,0},{0,0,0,1}}, unit[4][4]; int mod=10007; void multiply(int a[N][N], int b[N][N]) { int mul[N][N]; for (int i = 0; i &amp;lt; N; i&#43;&#43;) { for (int j = 0; j &amp;lt; N; j&#43;&#43;) { mul[i][j] = 0; for (int k = 0; k &amp;lt; N; k&#43;&#43;) mul[i][j] &#43;= (a[i][k]*b[k][j])%mod; } } // for (int i=0; i&amp;lt;N; i&#43;&#43;)  // for (int j=0; j&amp;lt;N; j&#43;&#43;)  // a[i][j] = mul[i][j];  memcpy(a,mul,sizeof mul); } void fast_mat_expo(int r[N][N],int n) { int b[4][4]; memcpy(r, unit, sizeof unit); memcpy(b, base, sizeof base); while(n&amp;gt;0) { if(n&amp;amp;1)//odd  multiply(r,b); n&amp;gt;&amp;gt;=1; multiply(b,b); } } int powa(int x,int y) { if(y==0) return 1; int temp = powa(x,y/2); if((y&amp;amp;1)==0) // (y%2==0) // LL korle 1LL  return temp*temp; else return x*temp*temp; } int main() { //freopen(&amp;#34;LightOj1093." />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
-<link rel="canonical" href="/blog/lightoj1096/" />
+<link rel="canonical" href="https://zarif98sjs.github.io/blog/blog/lightoj1096/" />
 
 
 
 
-<link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href="https://zarif98sjs.github.io/blog/assets/style.css">
 
 
 
 
 
 
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://zarif98sjs.github.io/blog/img/apple-touch-icon-144-precomposed.png">
 
-  <link rel="shortcut icon" href="/img/favicon/orange.png">
+  <link rel="shortcut icon" href="https://zarif98sjs.github.io/blog/img/favicon/orange.png">
 
 
 
@@ -39,11 +39,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:title" content="LightOj 1096 (nth Term) :: zarif98sjs">
 <meta property="og:description" content="nth Term" />
-<meta property="og:url" content="/blog/lightoj1096/" />
+<meta property="og:url" content="https://zarif98sjs.github.io/blog/blog/lightoj1096/" />
 <meta property="og:site_name" content="LightOj 1096 (nth Term)" />
 
   
-    <meta property="og:image" content="/img/favicon/orange.png">
+    <meta property="og:image" content="https://zarif98sjs.github.io/blog/img/favicon/orange.png">
   
 
 <meta property="og:image:width" content="2048">
@@ -99,11 +99,11 @@
         
       
         
-          <li><a href="/memento">Memento</a></li>
+          <li><a href="/blog/blog/memento">Memento</a></li>
         
       
         
-          <li><a href="/blog">Blog</a></li>
+          <li><a href="/blog/blog/blog">Blog</a></li>
         
       
       
@@ -127,11 +127,11 @@
       
     
       
-        <li><a href="/memento">Memento</a></li>
+        <li><a href="/blog/blog/memento">Memento</a></li>
       
     
       
-        <li><a href="/blog">Blog</a></li>
+        <li><a href="/blog/blog/blog">Blog</a></li>
       
     
     
@@ -146,7 +146,7 @@
     
 <div class="post">
   <h1 class="post-title">
-    <a href="/blog/lightoj1096/">LightOj 1096 (nth Term)</a></h1>
+    <a href="https://zarif98sjs.github.io/blog/blog/lightoj1096/">LightOj 1096 (nth Term)</a></h1>
   <div class="post-meta">
       
     <span class="post-date">
@@ -163,15 +163,15 @@
   
   <span class="post-tags">
     
-    #<a href="/tags/lightoj/">lightoj</a>&nbsp;
+    #<a href="https://zarif98sjs.github.io/blog/tags/lightoj/">lightoj</a>&nbsp;
     
-    #<a href="/tags/cp/">cp</a>&nbsp;
+    #<a href="https://zarif98sjs.github.io/blog/tags/cp/">cp</a>&nbsp;
     
-    #<a href="/tags/problem-solving/">problem solving</a>&nbsp;
+    #<a href="https://zarif98sjs.github.io/blog/tags/problem-solving/">problem solving</a>&nbsp;
     
-    #<a href="/tags/matrix-exponential/">matrix exponential</a>&nbsp;
+    #<a href="https://zarif98sjs.github.io/blog/tags/matrix-exponential/">matrix exponential</a>&nbsp;
     
-    #<a href="/tags/number-theory/">number theory</a>&nbsp;
+    #<a href="https://zarif98sjs.github.io/blog/tags/number-theory/">number theory</a>&nbsp;
     
   </span>
   
@@ -313,7 +313,7 @@
     <div class="pagination__buttons">
         
         <span class="button previous">
-            <a href="/blog/lightoj1088/">
+            <a href="https://zarif98sjs.github.io/blog/blog/lightoj1088/">
                 <span class="button__icon">←</span>
                 <span class="button__text">LightOj 1088 (Points in Segments)</span>
             </a>
@@ -321,7 +321,7 @@
         
         
         <span class="button next">
-            <a href="/blog/lightoj1168/">
+            <a href="https://zarif98sjs.github.io/blog/blog/lightoj1168/">
                 <span class="button__text">LightOj 1168 (Wishing Snake)</span>
                 <span class="button__icon">→</span>
             </a>
@@ -372,8 +372,8 @@
   </div>
 </footer>
 
-<script src="/assets/main.js"></script>
-<script src="/assets/prism.js"></script>
+<script src="https://zarif98sjs.github.io/blog/assets/main.js"></script>
+<script src="https://zarif98sjs.github.io/blog/assets/prism.js"></script>
 
 
 

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>articulation on zarif98sjs</title>
-    <link>/tags/articulation/</link>
+    <link>https://zarif98sjs.github.io/blog/tags/articulation/</link>
     <description>Recent content in articulation on zarif98sjs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 12 May 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/articulation/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://zarif98sjs.github.io/blog/tags/articulation/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>LightOj 1308 (Ant Network)</title>
-      <link>/blog/lightoj1308/</link>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1308/</link>
       <pubDate>Tue, 12 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/lightoj1308/</guid>
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1308/</guid>
       <description>Idea  Articulation Point
 Firstly there are 2 case :
  No Articulation point .
@@ -25,20 +25,20 @@ Then there must be at least 2 shaft such that if one fails , other works Articul
     
     <item>
       <title>LightOj 1291 (Real Life Traffic)</title>
-      <link>/blog/lightoj1291/</link>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1291/</link>
       <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/lightoj1291/</guid>
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1291/</guid>
       <description>Idea  Articulation Bridge
  Find the articulation bridges in the graph. If you remove the bridges, you will get several connected components. Think carefully, there are 2 types of components. The 1st one is the connected component which had more than one bridge, if you cut one bridge, it still can connect with other components through other bridge. The 2nd one is the component which had only one bridge, if you cut the bridge, it cannot connect with other components.</description>
     </item>
     
     <item>
       <title>LightOj 1300 (Odd Personality)</title>
-      <link>/blog/lightoj1300/</link>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1300/</link>
       <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/lightoj1300/</guid>
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1300/</guid>
       <description>Idea  Articulation Bridge
  Without bridges you can find two paths from a to b if they are connected. In any non-bicolorable graph there is a cycle of odd length.  /** Which of the favors of your Lord will you deny ? **/ #include&amp;lt;bits/stdc++.h&amp;gt;using namespace std; #define LL long long #define PII pair&amp;lt;int,int&amp;gt; #define PLL pair&amp;lt;LL,LL&amp;gt; #define MP make_pair #define F first #define S second #define INF INT_MAX  #define ALL(x) (x).</description>
     </item>

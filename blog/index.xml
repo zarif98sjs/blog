@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blogs on zarif98sjs</title>
-    <link>/blog/</link>
+    <link>https://zarif98sjs.github.io/blog/blog/</link>
     <description>Recent content in Blogs on zarif98sjs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 25 May 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://zarif98sjs.github.io/blog/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Creating your firt website using Hugo &amp; GitHub Pages</title>
-      <link>/blog/hugo/</link>
+      <link>https://zarif98sjs.github.io/blog/blog/hugo/</link>
       <pubDate>Mon, 25 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/hugo/</guid>
+      <guid>https://zarif98sjs.github.io/blog/blog/hugo/</guid>
       <description>While creating a website from scratch and deploying it can seem daunting at the first glance , using the help of frameworks like Hugo you can build your static websites for your personal use / blog / porfolio and deploy it using GitHub Pages . Making websites is fun again !
 Here , I will give a step by step process to build your website and to deploy it . Bear with me till the end :p</description>
     </item>
     
     <item>
       <title>LightOj 1308 (Ant Network)</title>
-      <link>/blog/lightoj1308/</link>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1308/</link>
       <pubDate>Tue, 12 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/lightoj1308/</guid>
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1308/</guid>
       <description>Idea  Articulation Point
 Firstly there are 2 case :
  No Articulation point .
@@ -35,80 +35,80 @@ Then there must be at least 2 shaft such that if one fails , other works Articul
     
     <item>
       <title>LightOj 1291 (Real Life Traffic)</title>
-      <link>/blog/lightoj1291/</link>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1291/</link>
       <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/lightoj1291/</guid>
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1291/</guid>
       <description>Idea  Articulation Bridge
  Find the articulation bridges in the graph. If you remove the bridges, you will get several connected components. Think carefully, there are 2 types of components. The 1st one is the connected component which had more than one bridge, if you cut one bridge, it still can connect with other components through other bridge. The 2nd one is the component which had only one bridge, if you cut the bridge, it cannot connect with other components.</description>
     </item>
     
     <item>
       <title>LightOj 1300 (Odd Personality)</title>
-      <link>/blog/lightoj1300/</link>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1300/</link>
       <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/lightoj1300/</guid>
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1300/</guid>
       <description>Idea  Articulation Bridge
  Without bridges you can find two paths from a to b if they are connected. In any non-bicolorable graph there is a cycle of odd length.  /** Which of the favors of your Lord will you deny ? **/ #include&amp;lt;bits/stdc++.h&amp;gt;using namespace std; #define LL long long #define PII pair&amp;lt;int,int&amp;gt; #define PLL pair&amp;lt;LL,LL&amp;gt; #define MP make_pair #define F first #define S second #define INF INT_MAX  #define ALL(x) (x).</description>
     </item>
     
     <item>
       <title>LightOj 1127 (Funny Knapsack)</title>
-      <link>/blog/lightoj1127/</link>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1127/</link>
       <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/lightoj1127/</guid>
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1127/</guid>
       <description>Idea  Meet In The Middle
  The idea is that you split the large set into two small sets, small enough for you to handle them using the standard algorithm you know, and then use the result from these two small sets to arrive at the required solution. Complexity : O(2^(n / 2) log (2^(n / 2))  /** Which of the favors of your Lord will you deny ?</description>
     </item>
     
     <item>
       <title>LightOj 1235 (Coin Change IV)</title>
-      <link>/blog/lightoj1235/</link>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1235/</link>
       <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/lightoj1235/</guid>
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1235/</guid>
       <description>Idea  Meet In The Middle
  The idea is that you split the large set into two small sets, small enough for you to handle them using the standard algorithm you know, and then use the result from these two small sets to arrive at the required solution. Note that , if we made 2 same vectors of n elements , and calculated subset sum by taking 0/1 times of the elements, then that would get TLE .</description>
     </item>
     
     <item>
       <title>LightOj 1170 (Counting Perfect BST)</title>
-      <link>/blog/lightoj1170/</link>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1170/</link>
       <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/lightoj1170/</guid>
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1170/</guid>
       <description>Idea  Binary Search / Catalan Number
  If there are n prefect power numbers in [a,b] , Answer is basically Catalan(n) Catalan(n) = (2n)! / (n! *(n+1)!)  Proof   Consider all possible binary search trees with each element at the root. If there are n nodes, then for each choice of root node, there are n – 1 non-root nodes and these non-root nodes must be partitioned into those that are less than a chosen root and those that are greater than the chosen root.</description>
     </item>
     
     <item>
       <title>LightOj 1048 (Conquering Keokradong)</title>
-      <link>/blog/lightoj1048/</link>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1048/</link>
       <pubDate>Tue, 05 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/lightoj1048/</guid>
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1048/</guid>
       <description>Idea  Binary Search
  Say, each day you walk D distance. It is very easy to understand that, if you have enough large D, it is always possible to cover start to end with K stops. If you know D, you can check if it is possible to pass with K stops, if it is possible, may be it will also be possible for a lower D. On the other hand, if it is not yet possible, you must walk more time in a day.</description>
     </item>
     
     <item>
       <title>LightOj 1076 (Get the Containers)</title>
-      <link>/blog/lightoj1076/</link>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1076/</link>
       <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/lightoj1076/</guid>
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1076/</guid>
       <description>Idea  Binary Search
  The target is to minimize the maximum capacity. Binary search over capacity &amp;lsquo;d&amp;rsquo; . If possible with capacity &amp;lsquo;d&amp;rsquo; , minimize and if not maximize using binary search .  /** Which of the favors of your Lord will you deny ? **/ #include&amp;lt;bits/stdc++.h&amp;gt;using namespace std; #define LL long long #define PII pair&amp;lt;int,int&amp;gt; #define PLL pair&amp;lt;LL,LL&amp;gt; #define MP make_pair #define F first #define S second #define INF INT_MAX  #define ALL(x) (x).</description>
     </item>
     
     <item>
       <title>LightOj 1030 (Discovering Gold)</title>
-      <link>/blog/lightoj1030/</link>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1030/</link>
       <pubDate>Sat, 15 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/blog/lightoj1030/</guid>
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1030/</guid>
       <description>Idea  Expected Value
  The expectation at i is E(i) = (E(i+1) + E(i+2) + E(i+3) + E(i+4) + E(i+5) + E(i+6)) / cnt + gold[i]
 where cnt is how many of E(i+x) is valid  /**Which of the favors of your Lord will you deny ?**/ #include&amp;lt;bits/stdc++.h&amp;gt;using namespace std; #define LL long long #define PII pair&amp;lt;int,int&amp;gt; #define PLL pair&amp;lt;LL,LL&amp;gt; #define MP make_pair #define F first #define S second #define INF INT_MAX  inline void optimizeIO() { ios_base::sync_with_stdio(false); cin.</description>
@@ -116,40 +116,40 @@ where cnt is how many of E(i+x) is valid  /**Which of the favors of your Lord wi
     
     <item>
       <title>LightOj 1021 (Painful Bases)</title>
-      <link>/blog/lightoj1021/</link>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1021/</link>
       <pubDate>Fri, 10 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/blog/lightoj1021/</guid>
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1021/</guid>
       <description>Idea  Bitmask DP
  Take idea from here : https://codeforces.com/blog/entry/19423 Note : Using excess memory will give RTE in this problem . So , allocate memory carefully .  /**Which of the favors of your Lord will you deny ?**/ #include&amp;lt;bits/stdc++.h&amp;gt;using namespace std; #define LL long long #define PII pair&amp;lt;int,int&amp;gt; #define PLL pair&amp;lt;LL,LL&amp;gt; #define MP make_pair #define F first #define S second #define INF INT_MAX  inline void optimizeIO() { ios_base::sync_with_stdio(false); cin.</description>
     </item>
     
     <item>
       <title>LightOj 1060 (nth Permutation)</title>
-      <link>/blog/lightoj1060/</link>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1060/</link>
       <pubDate>Thu, 09 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/blog/lightoj1060/</guid>
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1060/</guid>
       <description>Idea  DP
  First of all we check maximum number of permutations possible from the given string &amp;hellip; if it is &amp;lt; n than ans is impossible. Now we have to fix character at each position starting from msb position For fixing the character at any position initially we try to fix smallest character at that position if by placing that character number of permutation formed &amp;gt;= remaining required permutation than fix this charter at that position , and decrease the frequency of this character since this character is used at this position and move to next position , else if no of permutation formed by placing this character is less than the required remaining permutation than decrease remaining permutation by the number of permutation formed by placing this character at that position ( since this count times number of permutations comes in between current to final permutation ) and try to find next character for this position .</description>
     </item>
     
     <item>
       <title>LightOj 1071 (Baker Vai)</title>
-      <link>/blog/lightoj1071/</link>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1071/</link>
       <pubDate>Wed, 08 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/blog/lightoj1071/</guid>
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1071/</guid>
       <description>Idea  DP
  No one can better explain than Leonardo :D  /**Which of the favors of your Lord will you deny ?**/ #include&amp;lt;bits/stdc++.h&amp;gt;using namespace std; #define LL long long #define PII pair&amp;lt;int,int&amp;gt; #define PLL pair&amp;lt;LL,LL&amp;gt; #define MP make_pair #define F first #define S second #define INF INT_MAX  inline void optimizeIO() { ios_base::sync_with_stdio(false); cin.tie(NULL); } const int nmax = 1e2+7; const LL LINF = 1e17; string to_str(LL x) { stringstream ss; ss&amp;lt;&amp;lt;x; return ss.</description>
     </item>
     
     <item>
       <title>LightOj 1307 (Counting Triangles)</title>
-      <link>/blog/lightoj1307/</link>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1307/</link>
       <pubDate>Wed, 08 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/blog/lightoj1307/</guid>
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1307/</guid>
       <description>Idea  Binary Search
  For a triangle , the sum of any 2 side should be greater than the third side , which is to say the sum of the 2 shorter sides should be greater than the third side.
 i.e a + b &amp;gt; c [where a&amp;lt;=b&amp;lt;=c]  /** Which of the favors of your Lord will you deny ? **/ #include&amp;lt;bits/stdc++.h&amp;gt;using namespace std; #define LL long long #define PII pair&amp;lt;int,int&amp;gt; #define PLL pair&amp;lt;LL,LL&amp;gt; #define MP make_pair #define F first #define S second #define INF INT_MAX  #define ALL(x) (x).</description>
@@ -157,19 +157,19 @@ i.e a + b &amp;gt; c [where a&amp;lt;=b&amp;lt;=c]  /** Which of the favors of y
     
     <item>
       <title>LightOj 1005 (Rooks)</title>
-      <link>/blog/lightoj1005/</link>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1005/</link>
       <pubDate>Sun, 25 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>/blog/lightoj1005/</guid>
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1005/</guid>
       <description>Idea 1   Put a rook in row 1 , so there are c ways (c columns) to do that [c * shomadhan(r-1,c-1,k-1)] and don&amp;rsquo;t put a rook in row 1 , so there are r-1 rows [shomadhan(r-1,c,k)] So , ans = c * shomadhan(r-1,c-1,k-1) + shomadhan(r-1,c,k)  Idea 2   take k row from n row (nCk) take k col from n col (nCk) how many ways k rook arrange among themselves (k!</description>
     </item>
     
     <item>
       <title>LightOj 1034 (Hit the Light Switches)</title>
-      <link>/blog/lightoj1034/</link>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1034/</link>
       <pubDate>Sun, 25 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>/blog/lightoj1034/</guid>
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1034/</guid>
       <description>Idea  Topological Sort / Strongly Connected Component
  To visit all node we can simply touch minimum number of node by using topological sort.
 OR just find the number of SCC  /**Which of the favors of your Lord will you deny ?**/ #include&amp;lt;bits/stdc++.h&amp;gt;using namespace std; #define LL long long #define PII pair&amp;lt;int,int&amp;gt; #define MP make_pair #define F first #define S second  vector&amp;lt;int&amp;gt;adj[100010]; bool visited[10010]; stack&amp;lt;int&amp;gt;stk; void dfs1(int node) { visited[node]=true; for(int next:adj[node]) { if(visited[next]==false) dfs1(next); } stk.</description>
@@ -177,20 +177,20 @@ OR just find the number of SCC  /**Which of the favors of your Lord will you den
     
     <item>
       <title>LightOj 1063 (Crossed Ladders)</title>
-      <link>/blog/lightoj1062/</link>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1062/</link>
       <pubDate>Thu, 22 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>/blog/lightoj1062/</guid>
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1062/</guid>
       <description>Idea  Binary Search / Geometry
  Intersection of 2 line using cross product : http://bit.ly/line_intersection  /** Which of the favors of your Lord will you deny ? **/ #include&amp;lt;bits/stdc++.h&amp;gt;using namespace std; #define LL long long #define PII pair&amp;lt;int,int&amp;gt; #define PLI pair&amp;lt;LL,int&amp;gt; #define LPII pair&amp;lt;LL, pair&amp;lt;int,int&amp;gt; &amp;gt; #define MP make_pair #define F first #define S second #define LINF LLONG_MAX  //#define EPS 1e-11 double INF=1e100; double EPS=1e-12; struct PT { double x,y; PT() {} PT(double x,double y) : x(x), y(y) {} PT(const PT &amp;amp;p) : x(p.</description>
     </item>
     
     <item>
       <title>LightOj 1088 (Points in Segments)</title>
-      <link>/blog/lightoj1088/</link>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1088/</link>
       <pubDate>Thu, 22 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>/blog/lightoj1088/</guid>
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1088/</guid>
       <description>Idea  Binary Search
  Within time complexity only thing to do is binary search i.e use the lower_bound or the upper bound function to find the value of the index . lower_bound : points to the first number equals to the &amp;lsquo;num&amp;rsquo; or greater than the &amp;lsquo;num&amp;rsquo; upper_bound : points to the first number greater than the &amp;lsquo;num&amp;rsquo;  Critical Test Cases (Queries) :
 6(present) 10(present) &amp;ndash;&amp;gt; r-l+1
@@ -199,30 +199,30 @@ OR just find the number of SCC  /**Which of the favors of your Lord will you den
     
     <item>
       <title>LightOj 1096 (nth Term)</title>
-      <link>/blog/lightoj1096/</link>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1096/</link>
       <pubDate>Thu, 22 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>/blog/lightoj1096/</guid>
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1096/</guid>
       <description>Idea  Matrix Exponential
  Matrix Expo Resource One thing to notice is that here the power will be n-2  /* Which of the favors of your Lord will you deny? */ #include&amp;lt;bits/stdc++.h&amp;gt;using namespace std; #define MAX 100050  #define LL long long #define PII pair&amp;lt;int,int&amp;gt; #define MP make_pair #define F first #define S second  #define N 4  int base[4][4] = {{-1,0,-1,1},{1,0,0,0},{0,1,0,0},{0,0,0,1}}, unit[4][4]; int mod=10007; void multiply(int a[N][N], int b[N][N]) { int mul[N][N]; for (int i = 0; i &amp;lt; N; i++) { for (int j = 0; j &amp;lt; N; j++) { mul[i][j] = 0; for (int k = 0; k &amp;lt; N; k++) mul[i][j] += (a[i][k]*b[k][j])%mod; } } // for (int i=0; i&amp;lt;N; i++)  // for (int j=0; j&amp;lt;N; j++)  // a[i][j] = mul[i][j];  memcpy(a,mul,sizeof mul); } void fast_mat_expo(int r[N][N],int n) { int b[4][4]; memcpy(r, unit, sizeof unit); memcpy(b, base, sizeof base); while(n&amp;gt;0) { if(n&amp;amp;1)//odd  multiply(r,b); n&amp;gt;&amp;gt;=1; multiply(b,b); } } int powa(int x,int y) { if(y==0) return 1; int temp = powa(x,y/2); if((y&amp;amp;1)==0) // (y%2==0) // LL korle 1LL  return temp*temp; else return x*temp*temp; } int main() { //freopen(&amp;#34;LightOj1093.</description>
     </item>
     
     <item>
       <title>LightOj 1168 (Wishing Snake)</title>
-      <link>/blog/lightoj1168/</link>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1168/</link>
       <pubDate>Thu, 22 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>/blog/lightoj1168/</guid>
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1168/</guid>
       <description>Idea  SCC
  Create DAG from SCC and just check if every node is reachable form the starting node (i.e node 0) by a single dfs  /**Which of the favors of your Lord will you deny ?**/ #include&amp;lt;bits/stdc++.h&amp;gt;using namespace std; #define LL long long #define PII pair&amp;lt;int,int&amp;gt; #define MP make_pair #define F first #define S second  int scc_num; vector&amp;lt;int&amp;gt;graph[100010]; vector&amp;lt;int&amp;gt;rev_graph[100010]; vector&amp;lt;int&amp;gt;new_graph[100010]; //vector&amp;lt;int&amp;gt;Map(1010,-1); //vector&amp;lt;int&amp;gt;SCCMap(1010,0);  int Map[1010]; int SCCMap[1010]; stack&amp;lt;int&amp;gt;stk; bool visited[1010]; bool flag=true; void forward_dfs(int node) { visited[node]=true; for(int next:graph[node]) { if(visited[next]==false) forward_dfs(next); } stk.</description>
     </item>
     
     <item>
       <title>LightOj 1211 (Intersection of Cubes)</title>
-      <link>/blog/lightoj1211/</link>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1211/</link>
       <pubDate>Thu, 22 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>/blog/lightoj1211/</guid>
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1211/</guid>
       <description>Idea  Geometry
  Try with 3 squares first .
 You will see that the area = (min of the upper x - max of the lower x)*(min of the upper y - max of the lower y)  /* Which of the favors of your Lord will you deny? */ #include&amp;lt;bits/stdc++.h&amp;gt;using namespace std; #define pi acos(-1)  #define SI(n) scanf(&amp;#34;%d&amp;#34;,&amp;amp;n) #define SLL(n) scanf(&amp;#34;%lld&amp;#34;,&amp;amp;n) #define SULL(n) scanf(&amp;#34;%llu&amp;#34;,&amp;amp;n) #define SC(n) scanf(&amp;#34;%c&amp;#34;,&amp;amp;n) #define SD(n) scanf(&amp;#34;%lf&amp;#34;,&amp;amp;n)  #define fr(i,a,b) for(int i=a ,_b=(b) ;i&amp;lt;= _b;i++)  #define LL long long #define PUB push_back #define POB pop_back #define MP make_pair; #define PII pair&amp;lt;int,int&amp;gt; #define PLL pair&amp;lt;ll,ll&amp;gt;  #define GCD __gcd #define DEBUG cout&amp;lt;&amp;lt;&amp;#34;aw&amp;#34;&amp;lt;&amp;lt;endl;  int main() { //freopen(&amp;#34;LOJ1211.</description>
@@ -230,20 +230,20 @@ You will see that the area = (min of the upper x - max of the lower x)*(min of t
     
     <item>
       <title>LightOj 1056 (Olympics)</title>
-      <link>/blog/lightoj1056/</link>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1056/</link>
       <pubDate>Wed, 21 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>/blog/lightoj1056/</guid>
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1056/</guid>
       <description>Idea  Binary Search / Geometry
  Total Perimeter = 2(s+a) = 2*(r*theta +a) = 2*(sqrt(a^2+b^2)*arctan(b/a) + a) So, we can Binary Search over a  /** Which of the favors of your Lord will you deny ? **/ #include&amp;lt;bits/stdc++.h&amp;gt;using namespace std; #define LL long long #define PII pair&amp;lt;int,int&amp;gt; #define PLI pair&amp;lt;LL,int&amp;gt; #define LPII pair&amp;lt;LL, pair&amp;lt;int,int&amp;gt; &amp;gt; #define MP make_pair #define F first #define S second #define LINF LLONG_MAX  #define EPS 1e-11  int main() { int tc; scanf(&amp;#34;%d&amp;#34;,&amp;amp;tc); //freopen(&amp;#34;LightOj1056.</description>
     </item>
     
     <item>
       <title>LightOj 1043 (Triangle Partitioning)</title>
-      <link>/blog/lightoj1043/</link>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1043/</link>
       <pubDate>Tue, 20 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>/blog/lightoj1043/</guid>
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1043/</guid>
       <description>Idea 1  Binary Search
  AB/AD = AC/AE = BC/DE So , AE = (ACAD)/AB
 and , DE = (BCAD)/AB The area ratio of those two triangles can be calculated as a function of AD .
