@@ -3,7 +3,7 @@ title = "Creating your firt website using Hugo & GitHub Pages"
 date = "2020-05-25"
 author = "~10 min read"
 tags = ["website", "hugo" ,"github pages"]
-cover = "/img/hugocov.png"
+cover = "/img/hugocover.jpg"
 description = "Making websites is fun again !"
 +++
 
