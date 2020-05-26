@@ -74,10 +74,10 @@ disqusShortname = "zar"
       [[languages.en.menu.main]]
         identifier = "memento"
         name = "Memento"
-        url = "/memento"
+        url = "https://zarif98sjs.github.io/memento"
         weight = 4
       [[languages.en.menu.main]]
         identifier = "blog"
         name = "Blog"
-        url = "/blog"
+        url = "https://zarif98sjs.github.io/blog"
         weight = 5
