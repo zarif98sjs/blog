@@ -7,7 +7,7 @@ cover = "/blog/img/hugocover.jpg"
 description = "Making websites is fun again !"
 +++
 
-While creating a website from scratch and deploying it can seem daunting at the first glance , using the help of frameworks like `Hugo` you can build your static websites for your personal use / blog / porfolio and deploy it using `GitHub Pages` . Making websites is fun again ! 
+While creating a website from scratch and deploying it can seem daunting at the first glance , using the help of frameworks like `Hugo` you can build your static websites for your personal use / blog / portfolio and deploy it using `GitHub Pages` . Making websites is fun again ! 
 
 Here , I will give a step by step process to build your website and to deploy it . Bear with me till the end :p 
 
@@ -23,12 +23,12 @@ Open `Command Prompt` and go to your directory using `cd` command . Type `hugo n
 Go [here](https://themes.gohugo.io/) . Find a theme according to your preference . This will make your life easy to get your website up and running in no time . Download your theme and extract your theme in the `\theme` directory that has been created in step 2 .  
 
 - # *Step 4 : Learn Markdown*
-Don't worry if you have no idea what markdown is . Markdown is a lightweight markup langugage which won't take more than 5 minutes to learn . Here's [basic syntax](https://www.markdownguide.org/basic-syntax/) and here's a [cheet sheet](https://www.markdownguide.org/cheat-sheet/)
+Don't worry if you have no idea what markdown is . Markdown is a lightweight markup language which won't take more than 5 minutes to learn . Here's [basic syntax](https://www.markdownguide.org/basic-syntax/) and here's a [cheat sheet](https://www.markdownguide.org/cheat-sheet/)
 
 - # *Step 5 : Test your site*
-Allmost all theme comes with a `\exampleSite` directory in themes . Replace the `\content` , `\static` , `config.toml` in your actual site directory with the ones in exampleSite .  
+Almost all theme comes with a `\exampleSite` directory in themes . Replace the `\content` , `\static` , `config.toml` in your actual site directory with the ones in exampleSite .  
 Run `hugo server` command from your terminal . And you will find a localhost link . Hopefully you will be able to see your website :D  
-All of the themes comes with a `ReadMe` in their GitHub Repo . Read them to learn about how to modify and tweak your theme and creat your content .
+All of the themes comes with a `ReadMe` in their GitHub Repo . Read them to learn about how to modify and tweak your theme and create your content .
 
 - # *Step 6 : Deploy your site* 
 

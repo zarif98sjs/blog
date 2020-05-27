@@ -17,7 +17,7 @@
       <pubDate>Mon, 25 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://zarif98sjs.github.io/blog/blog/hugo/</guid>
-      <description>While creating a website from scratch and deploying it can seem daunting at the first glance , using the help of frameworks like Hugo you can build your static websites for your personal use / blog / porfolio and deploy it using GitHub Pages . Making websites is fun again !
+      <description>While creating a website from scratch and deploying it can seem daunting at the first glance , using the help of frameworks like Hugo you can build your static websites for your personal use / blog / portfolio and deploy it using GitHub Pages . Making websites is fun again !
 Here , I will give a step by step process to build your website and to deploy it . Bear with me till the end :p</description>
     </item>
     
@@ -104,6 +104,15 @@ Then there must be at least 2 shaft such that if one fails , other works Articul
     </item>
     
     <item>
+      <title>CODESAMURAI 2019 DU</title>
+      <link>https://zarif98sjs.github.io/blog/memento/hackathondu2019/</link>
+      <pubDate>Wed, 25 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/memento/hackathondu2019/</guid>
+      <description>When the date for this was announced , our term finals of L2T1 was just about to start and this Hackathon was just one day before the Math exam . I was looking forward to this one as this was arranged by the Japan based Company BJIT . I persuaded Najib and Apurba to take their math prep before the term finals :p and this is how our jouney started here .</description>
+    </item>
+    
+    <item>
       <title>LightOj 1030 (Discovering Gold)</title>
       <link>https://zarif98sjs.github.io/blog/blog/lightoj1030/</link>
       <pubDate>Sat, 15 Jun 2019 00:00:00 +0000</pubDate>
@@ -112,15 +121,6 @@ Then there must be at least 2 shaft such that if one fails , other works Articul
       <description>Idea  Expected Value
  The expectation at i is E(i) = (E(i+1) + E(i+2) + E(i+3) + E(i+4) + E(i+5) + E(i+6)) / cnt + gold[i]
 where cnt is how many of E(i+x) is valid  /**Which of the favors of your Lord will you deny ?**/ #include&amp;lt;bits/stdc++.h&amp;gt;using namespace std; #define LL long long #define PII pair&amp;lt;int,int&amp;gt; #define PLL pair&amp;lt;LL,LL&amp;gt; #define MP make_pair #define F first #define S second #define INF INT_MAX  inline void optimizeIO() { ios_base::sync_with_stdio(false); cin.</description>
-    </item>
-    
-    <item>
-      <title>CODESAMURAI 2019 DU</title>
-      <link>https://zarif98sjs.github.io/blog/memento/hackathondu2019/</link>
-      <pubDate>Sat, 25 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://zarif98sjs.github.io/blog/memento/hackathondu2019/</guid>
-      <description></description>
     </item>
     
     <item>
