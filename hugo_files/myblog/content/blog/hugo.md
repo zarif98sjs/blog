@@ -1,5 +1,5 @@
 +++
-title = "Creating your firt website using Hugo & GitHub Pages"
+title = "Creating your first website using Hugo & GitHub Pages"
 date = "2020-05-25"
 author = "~10 min read"
 tags = ["website", "hugo" ,"github pages"]
