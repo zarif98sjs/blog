@@ -37,7 +37,8 @@ Make a public repository `YOUR_USERNAME.github.io` and clone that repository loc
 Commit your changes and go to GitHub . Go to repository settings and scroll down to `GitHub Pages` .  
 Hopefully you will find the link where your website is deployed . 
 
-Now that you know , how to create and deploy your site , the opportunities are endless !  
+Now that you know how to create and deploy your site , the opportunities are endless !  
+
 
 ---
 
