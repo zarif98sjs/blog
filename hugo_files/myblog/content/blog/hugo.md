@@ -34,7 +34,10 @@ All of the themes comes with a `ReadMe` in their GitHub Repo . Read them to lear
 
 Now that you have created your site . It's time for you to deploy and let the world know about your next big thing :p  
 Make a public repository `YOUR_USERNAME.github.io` and clone that repository locally . Now go to your site and type `hugo` in command prompt . This will create a `\public` directory in your site folder . Now copy all the contents from your directory to the repository you created in this step .   
-Commit your changes and go to GitHub . Go to repository settings and scroll down to `GitHub Pages` . Hopefully you will find the link where your website is deployed . 
+Commit your changes and go to GitHub . Go to repository settings and scroll down to `GitHub Pages` .  
+Hopefully you will find the link where your website is deployed . 
+
+Now that you know , how to create and deploy your site , the opportunities are endless !  
 
 ---
 
