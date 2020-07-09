@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>LightOj 1428 (Melody Comparison) :: zarif98sjs — zarif98sjs</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="Idea   First , think an easier version of this problem . How many distinct substrings are possible of a string S ?  Let&amp;rsquo;s solve an easier version of this easy problem . How many substrings are possible of a string S ?
+For any p[i] i.e for any suffix , the number of possible substrings are (S.size() - p[i])
+Then the ending position for possible substrings starts from p[i] and ends at S." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://zarif98sjs.github.io/blog/blog/lightoj1428/" />
+
+
+
+
+<link rel="stylesheet" href="https://zarif98sjs.github.io/blog/assets/style.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://zarif98sjs.github.io/blog/img/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="https://zarif98sjs.github.io/blog/img/favicon/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  <meta name="twitter:site" content="" />
+
+<meta name="twitter:creator" content="~7 min read" />
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="LightOj 1428 (Melody Comparison) :: zarif98sjs">
+<meta property="og:description" content="Melody Comparison" />
+<meta property="og:url" content="https://zarif98sjs.github.io/blog/blog/lightoj1428/" />
+<meta property="og:site_name" content="LightOj 1428 (Melody Comparison)" />
+
+  
+    <meta property="og:image" content="https://zarif98sjs.github.io/blog/img/favicon/orange.png">
+  
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+  <meta property="article:published_time" content="2020-07-02 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container full headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="https://zarif98sjs.github.io/">
+  <div class="logo">
+    zarif98sjs
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="https://zarif98sjs.github.io/about/">About</a></li>
+        
+      
+        
+          <li><a href="https://zarif98sjs.github.io/projects/">Projects</a></li>
+        
+      
+        
+          <li><a href="https://zarif98sjs.github.io/skills/">Skills</a></li>
+        
+      
+        
+          <li><a href="/blog/memento/">Memento</a></li>
+        
+      
+        
+          <li><a href="/blog/blog">Blog</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="https://zarif98sjs.github.io/about/">About</a></li>
+      
+    
+      
+        <li><a href="https://zarif98sjs.github.io/projects/">Projects</a></li>
+      
+    
+      
+        <li><a href="https://zarif98sjs.github.io/skills/">Skills</a></li>
+      
+    
+      
+        <li><a href="/blog/memento/">Memento</a></li>
+      
+    
+      
+        <li><a href="/blog/blog">Blog</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="https://zarif98sjs.github.io/blog/blog/lightoj1428/">LightOj 1428 (Melody Comparison)</a></h1>
+  <div class="post-meta">
+      
+    <span class="post-date">
+      2020-07-02
+    </span>
+    
+    
+    <span class="post-author">::
+      ~7 min read
+    </span>
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="https://zarif98sjs.github.io/blog/tags/lightoj/">lightoj</a>&nbsp;
+    
+    #<a href="https://zarif98sjs.github.io/blog/tags/cp/">cp</a>&nbsp;
+    
+    #<a href="https://zarif98sjs.github.io/blog/tags/problem-solving/">problem solving</a>&nbsp;
+    
+    #<a href="https://zarif98sjs.github.io/blog/tags/string/">string</a>&nbsp;
+    
+    #<a href="https://zarif98sjs.github.io/blog/tags/suffix-array/">suffix array</a>&nbsp;
+    
+    #<a href="https://zarif98sjs.github.io/blog/tags/binary-search/">binary search</a>&nbsp;
+    
+    #<a href="https://zarif98sjs.github.io/blog/tags/kmp/">kmp</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  <div class="post-content"><div>
+        <h1 id="idea">Idea<a href="#idea" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<hr>
+<ul>
+<li>First , think an easier version of this problem . How many <em><strong>distinct</strong></em> <em><strong>substrings</strong></em> are possible of a string S ?</li>
+</ul>
+<p>Let&rsquo;s solve an easier version of this easy problem . How many <em><strong>substrings</strong></em> are possible of a string S ?<br>
+For any <code>p[i]</code> i.e for any suffix , the number of possible substrings are <code>(S.size() - p[i])</code><br>
+Then the <em><strong>ending position</strong></em> for possible substrings starts from <code>p[i]</code> and ends at <code>S.size() - 1</code> <strong>(0 based indexing)</strong> . Hence the number of possible substrings are <code>(S.size() - p[i])</code></p>
+<p>Now , how many of them are <em><strong>distinct</strong></em> ?<br>
+We need to look into the <strong>LCP array</strong> for that . When we know <code>LCP(i)</code> , we know the length of <strong>Longest Common Prefix</strong> of suffix <code>i</code> and suffix <code>i-1</code><br>
+Now , the <em><strong>ending position</strong></em> for possible substrings starts from <code>p[i] + LCP(i)</code> and ends at <code>S.size() - 1</code> <strong>(0 based indexing)</strong></p>
+<p>Why  <code>p[i] + LCP(i)</code> ?</p>
+<blockquote>
+<p>Because in the <code>i-1</code> th suffix we have already considered the substrings that start from <code>p[i]</code> , <code>p[i] + 1</code> , &hellip; , <code>p[i] + LCP(i) - 1</code></p>
+</blockquote>
+<p>Now that we have solved all the easier versions . Let&rsquo;s solve our problem :D</p>
+<p>How many among the distinct substrings <em><strong>doesn&rsquo;t contain another string as a substring</strong></em> ?<br>
+Let&rsquo;s call this other string <code>SUB</code>  .
+What&rsquo;s the thing that will change in our substring count ?</p>
+<blockquote>
+<p>For any suffix , the ending position for possible substrings still starts from <code>p[i] + LCP(i)</code> . But this time we can&rsquo;t end at <code>S.size()-1</code> as that could lead to have substring having the string <code>SUB</code> . So , we need to find the new ending positions .</p>
+</blockquote>
+<p>For this part we need to know the positions where our string <code>SUB</code> appears in our string <code>S</code> . We can use <em><strong>KMP</strong></em> for that . Also we can b_**inary search on suffix array**_ for that .
+Anyway , now that you know where our string <code>SUB</code> occurs , you know that then ending position for that values will be <code>p[i] + SUB.size() - 1</code> . As , if we go one more we would have considered the string <code>SUB</code>.<br>
+Now , we can solve for the rest of the positions easily .</p>
+<p>Let&rsquo;s see an example for this case.</p>
+<p>Let , S = <code>abacdaba</code>  &amp; SUB = <code>aba</code></p>
+<blockquote>
+<p><strong>abacdaba</strong><br>
+0^^^^5^^</p>
+</blockquote>
+<p><code>aba</code> occurs in position 0 and 5 . What are the ending positions of 0 and 5 ?<br>
+For , 0 it is 0+2 = 2 . We can not end anywhere starting from 2 and beyond . So , we can make <code>a</code> <code>ab</code> but not <code>aba</code></p>
+<p>So , the ending positions become ,</p>
+<blockquote>
+<p><strong>abacdaba</strong><br>
+2^^^^7^^</p>
+</blockquote>
+<p>For other positions ?</p>
+<blockquote>
+<p><strong>abacdaba</strong><br>
+27777788</p>
+</blockquote>
+<p>Why ?
+Well , figure that out yourself :p It&rsquo;s really easy to see why</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp">
+<span style="color:#75715e">/** Which of the favors of your Lord will you deny ? **/</span>
+
+<span style="color:#75715e">#include</span><span style="color:#75715e">&lt;bits/stdc++.h&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
+
+<span style="color:#75715e">#define LL long long
+</span><span style="color:#75715e">#define PII pair&lt;int,int&gt;
+</span><span style="color:#75715e">#define PLL pair&lt;LL,LL&gt;
+</span><span style="color:#75715e">#define MP make_pair
+</span><span style="color:#75715e">#define F first
+</span><span style="color:#75715e">#define S second
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">#define ALL(x) (x).begin(), (x).end()
+</span><span style="color:#75715e">#define DBG(x) cout &lt;&lt; __LINE__ &lt;&lt; &#34; says: &#34; &lt;&lt; #x &lt;&lt; &#34; = &#34; &lt;&lt; (x) &lt;&lt; endl
+</span><span style="color:#75715e">#define READ        freopen(&#34;alu.txt&#34;, &#34;r&#34;, stdin)
+</span><span style="color:#75715e">#define WRITE       freopen(&#34;vorta.txt&#34;, &#34;w&#34;, stdout)
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;ext/pb_ds/assoc_container.hpp&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;ext/pb_ds/tree_policy.hpp&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> __gnu_pbds;
+
+<span style="color:#66d9ef">template</span><span style="color:#f92672">&lt;</span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TIn</span><span style="color:#f92672">&gt;</span><span style="color:#66d9ef">using</span> indexed_set <span style="color:#f92672">=</span> tree<span style="color:#f92672">&lt;</span>TIn, null_type, less<span style="color:#f92672">&lt;</span>TIn<span style="color:#f92672">&gt;</span>,rb_tree_tag, tree_order_statistics_node_update<span style="color:#f92672">&gt;</span>;
+
+<span style="color:#75715e">/**
+</span><span style="color:#75715e">
+</span><span style="color:#75715e">PBDS
+</span><span style="color:#75715e">-------------------------------------------------
+</span><span style="color:#75715e">1) insert(value)
+</span><span style="color:#75715e">2) erase(value)
+</span><span style="color:#75715e">3) order_of_key(value) // 0 based indexing
+</span><span style="color:#75715e">4) *find_by_order(position) // 0 based indexing
+</span><span style="color:#75715e">
+</span><span style="color:#75715e">**/</span>
+
+<span style="color:#66d9ef">template</span><span style="color:#f92672">&lt;</span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">T1</span>, <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">T2</span><span style="color:#f92672">&gt;</span>
+ostream <span style="color:#f92672">&amp;</span><span style="color:#66d9ef">operator</span> <span style="color:#f92672">&lt;&lt;</span>(ostream <span style="color:#f92672">&amp;</span>os, pair<span style="color:#f92672">&lt;</span>T1,T2<span style="color:#f92672">&gt;&amp;</span>p);
+<span style="color:#66d9ef">template</span> <span style="color:#f92672">&lt;</span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">T</span><span style="color:#f92672">&gt;</span>
+ostream <span style="color:#f92672">&amp;</span><span style="color:#66d9ef">operator</span> <span style="color:#f92672">&lt;&lt;</span>(ostream <span style="color:#f92672">&amp;</span>os, vector<span style="color:#f92672">&lt;</span>T<span style="color:#f92672">&gt;&amp;</span>v);
+<span style="color:#66d9ef">template</span> <span style="color:#f92672">&lt;</span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">T</span><span style="color:#f92672">&gt;</span>
+ostream <span style="color:#f92672">&amp;</span><span style="color:#66d9ef">operator</span> <span style="color:#f92672">&lt;&lt;</span>(ostream <span style="color:#f92672">&amp;</span>os, set<span style="color:#f92672">&lt;</span>T<span style="color:#f92672">&gt;&amp;</span>v);
+
+<span style="color:#66d9ef">inline</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">optimizeIO</span>()
+{
+    ios_base<span style="color:#f92672">::</span>sync_with_stdio(false);
+    cin.tie(NULL);
+}
+
+<span style="color:#66d9ef">const</span> <span style="color:#66d9ef">int</span> nmax <span style="color:#f92672">=</span> <span style="color:#ae81ff">2e5</span><span style="color:#f92672">+</span><span style="color:#ae81ff">7</span>;
+<span style="color:#66d9ef">const</span> LL LINF <span style="color:#f92672">=</span> <span style="color:#ae81ff">1e17</span>;
+
+<span style="color:#66d9ef">template</span> <span style="color:#f92672">&lt;</span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">T</span><span style="color:#f92672">&gt;</span>
+string to_str(T x)
+{
+    stringstream ss;
+    ss<span style="color:#f92672">&lt;&lt;</span>x;
+    <span style="color:#66d9ef">return</span> ss.str();
+}
+
+<span style="color:#75715e">//bool cmp(const PII &amp;A,const PII &amp;B)
+</span><span style="color:#75715e">//{
+</span><span style="color:#75715e">//
+</span><span style="color:#75715e">//}
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">count_sort</span>(vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">&amp;</span>p,vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">&amp;</span>c)
+{
+    <span style="color:#66d9ef">int</span> n <span style="color:#f92672">=</span> p.size();
+
+    vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span>cnt(n);
+
+    <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">auto</span> el:c)
+        cnt[el]<span style="color:#f92672">++</span>;
+
+    vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span>np(n);
+    vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span>pos(n); <span style="color:#75715e">/// pos[i] = first empty position in bucket i
+</span><span style="color:#75715e"></span>
+    pos[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+    <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>; i<span style="color:#f92672">&lt;</span>n; i<span style="color:#f92672">++</span>)
+        pos[i] <span style="color:#f92672">=</span> pos[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>] <span style="color:#f92672">+</span> cnt[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>];
+
+    <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">auto</span> el:p)
+    {
+        <span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> c[el]; <span style="color:#75715e">/// bucket
+</span><span style="color:#75715e"></span>        np[pos[i]] <span style="color:#f92672">=</span> el; <span style="color:#75715e">/// putting element in bucket
+</span><span style="color:#75715e"></span>        pos[i]<span style="color:#f92672">++</span>; <span style="color:#75715e">/// empty position in bucket i increased
+</span><span style="color:#75715e"></span>    }
+
+    p <span style="color:#f92672">=</span> np;
+
+}
+
+vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> buildSuffixArray(string s)
+{
+    s <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#34;$&#34;</span>;
+
+    <span style="color:#66d9ef">int</span> n <span style="color:#f92672">=</span> s.size();
+
+    <span style="color:#75715e">/// init p , c
+</span><span style="color:#75715e"></span>
+    vector<span style="color:#f92672">&lt;</span>PII<span style="color:#f92672">&gt;</span>v(n);
+
+    <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>; i<span style="color:#f92672">&lt;</span>n; i<span style="color:#f92672">++</span>)
+        v[i] <span style="color:#f92672">=</span> {s[i],i};
+    sort(ALL(v));
+
+    vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span>p(n), c(n);
+    <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>; i<span style="color:#f92672">&lt;</span>n; i<span style="color:#f92672">++</span>)
+        p[i] <span style="color:#f92672">=</span> v[i].S;
+
+    c[p[<span style="color:#ae81ff">0</span>]] <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+    <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>; i<span style="color:#f92672">&lt;</span>n; i<span style="color:#f92672">++</span>)
+    {
+        <span style="color:#66d9ef">if</span>(v[i].F<span style="color:#f92672">!=</span>v[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>].F)
+            c[p[i]] <span style="color:#f92672">=</span> c[p[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]] <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
+        <span style="color:#66d9ef">else</span>
+            c[p[i]] <span style="color:#f92672">=</span> c[p[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]];
+    }
+
+    <span style="color:#75715e">/// logN times
+</span><span style="color:#75715e"></span>
+    <span style="color:#66d9ef">int</span> k <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+
+    <span style="color:#66d9ef">while</span>((<span style="color:#ae81ff">1</span><span style="color:#f92672">&lt;&lt;</span>k) <span style="color:#f92672">&lt;</span> n)
+    {
+        <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>; i<span style="color:#f92672">&lt;</span>n; i<span style="color:#f92672">++</span>)
+            p[i] <span style="color:#f92672">=</span> (p[i] <span style="color:#f92672">-</span> (<span style="color:#ae81ff">1</span><span style="color:#f92672">&lt;&lt;</span>k) <span style="color:#f92672">+</span> n)<span style="color:#f92672">%</span>n;
+
+        count_sort(p,c);
+
+        vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span>nc(n);
+
+        nc[p[<span style="color:#ae81ff">0</span>]] <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+        <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>; i<span style="color:#f92672">&lt;</span>n; i<span style="color:#f92672">++</span>)
+        {
+            PII now  <span style="color:#f92672">=</span> { c[p[i]] , c[ (p[i]<span style="color:#f92672">+</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">&lt;&lt;</span>k))<span style="color:#f92672">%</span>n] };
+            PII prev <span style="color:#f92672">=</span> { c[p[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]] , c[ (p[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]<span style="color:#f92672">+</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">&lt;&lt;</span>k))<span style="color:#f92672">%</span>n] };
+
+            <span style="color:#66d9ef">if</span>(now<span style="color:#f92672">!=</span>prev)
+                nc[p[i]] <span style="color:#f92672">=</span> nc[p[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]] <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
+            <span style="color:#66d9ef">else</span>
+                nc[p[i]] <span style="color:#f92672">=</span> nc[p[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]];
+        }
+
+        c <span style="color:#f92672">=</span> nc;
+        k<span style="color:#f92672">++</span>;
+    }
+
+    <span style="color:#75715e">/// after all the iterations , c[i] = position of the suffix i in p
+</span><span style="color:#75715e"></span>
+    <span style="color:#66d9ef">return</span> p;
+}
+
+<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">lowerBound</span>(<span style="color:#66d9ef">int</span> lo,<span style="color:#66d9ef">int</span> hi,string s,string key,vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">&amp;</span>ara)
+{
+    <span style="color:#66d9ef">while</span>(lo<span style="color:#f92672">!=</span>hi)
+    {
+        <span style="color:#66d9ef">int</span> mid <span style="color:#f92672">=</span> lo <span style="color:#f92672">+</span> (hi<span style="color:#f92672">-</span>lo)<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>;
+
+        string chk <span style="color:#f92672">=</span> s.substr(ara[mid],key.size());
+
+        <span style="color:#66d9ef">if</span>(chk<span style="color:#f92672">&lt;</span>key) lo <span style="color:#f92672">=</span> mid <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
+        <span style="color:#66d9ef">else</span> hi <span style="color:#f92672">=</span> mid;
+    }
+
+    <span style="color:#66d9ef">return</span> lo;
+
+}
+
+<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">upperBound</span>(<span style="color:#66d9ef">int</span> lo,<span style="color:#66d9ef">int</span> hi,string s,string key,vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">&amp;</span>ara)
+{
+    <span style="color:#66d9ef">while</span>(lo<span style="color:#f92672">!=</span>hi)
+    {
+        <span style="color:#66d9ef">int</span> mid <span style="color:#f92672">=</span> lo <span style="color:#f92672">+</span> (hi<span style="color:#f92672">-</span>lo)<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>;
+
+        string chk <span style="color:#f92672">=</span> s.substr(ara[mid],key.size());
+
+        <span style="color:#66d9ef">if</span>(chk<span style="color:#f92672">&lt;=</span>key) lo <span style="color:#f92672">=</span> mid <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
+        <span style="color:#66d9ef">else</span> hi <span style="color:#f92672">=</span> mid;
+    }
+
+    <span style="color:#66d9ef">return</span> lo;
+}
+
+vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> buildLCPArray(string s,vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">&amp;</span>p)
+{
+    s<span style="color:#f92672">+=</span><span style="color:#e6db74">&#34;$&#34;</span>;
+    <span style="color:#66d9ef">int</span> n <span style="color:#f92672">=</span> s.size();
+
+    vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span>rnk(n);
+
+    <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>;i<span style="color:#f92672">&lt;</span>n;i<span style="color:#f92672">++</span>)
+        rnk[p[i]] <span style="color:#f92672">=</span> i; <span style="color:#75715e">/// this is basically the c array after all iterations
+</span><span style="color:#75715e"></span>
+    vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span>lcp(n);
+
+    <span style="color:#66d9ef">int</span> k <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+
+    <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>;i<span style="color:#f92672">&lt;</span>n<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>;i<span style="color:#f92672">++</span>)
+    {
+        <span style="color:#66d9ef">int</span> pi <span style="color:#f92672">=</span> rnk[i];
+        <span style="color:#66d9ef">int</span> j <span style="color:#f92672">=</span> p[pi<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>];
+
+        <span style="color:#75715e">/// lcp[i] = lcp(s[i...],s[j...])
+</span><span style="color:#75715e"></span>
+        <span style="color:#66d9ef">while</span>(s[i<span style="color:#f92672">+</span>k]<span style="color:#f92672">==</span>s[j<span style="color:#f92672">+</span>k]) k<span style="color:#f92672">++</span>;
+        lcp[pi] <span style="color:#f92672">=</span> k;
+        k <span style="color:#f92672">=</span> max(k<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">0</span>);
+    }
+
+    <span style="color:#66d9ef">return</span> lcp;
+}
+
+<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>()
+{
+    optimizeIO();
+
+    <span style="color:#66d9ef">int</span> tc;
+    cin<span style="color:#f92672">&gt;&gt;</span>tc;
+
+    <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> qq<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>;qq<span style="color:#f92672">&lt;=</span>tc;qq<span style="color:#f92672">++</span>)
+    {
+        string s,sub;
+        cin<span style="color:#f92672">&gt;&gt;</span>s<span style="color:#f92672">&gt;&gt;</span>sub;
+
+        <span style="color:#66d9ef">int</span> n <span style="color:#f92672">=</span> s.size();
+
+        vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> p <span style="color:#f92672">=</span> buildSuffixArray(s);
+        vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span>lcp <span style="color:#f92672">=</span> buildLCPArray(s,p);
+
+        vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> ending_pos(p.size(),<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>);
+
+        <span style="color:#66d9ef">int</span> lo <span style="color:#f92672">=</span> lowerBound(<span style="color:#ae81ff">0</span>,n<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>,s,sub,p);
+        <span style="color:#66d9ef">int</span> hi <span style="color:#f92672">=</span> upperBound(<span style="color:#ae81ff">0</span>,n<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>,s,sub,p);
+
+        <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span>lo;i<span style="color:#f92672">&lt;</span>hi;i<span style="color:#f92672">++</span>)
+            ending_pos[p[i]] <span style="color:#f92672">=</span> p[i] <span style="color:#f92672">+</span> sub.size() <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>;
+
+        <span style="color:#66d9ef">int</span> now <span style="color:#f92672">=</span> s.size();
+
+        <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> (<span style="color:#66d9ef">int</span>)ending_pos.size() <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>;i<span style="color:#f92672">&gt;=</span><span style="color:#ae81ff">0</span>;i<span style="color:#f92672">--</span>)
+        {
+            <span style="color:#66d9ef">if</span>(ending_pos[i]<span style="color:#f92672">==-</span><span style="color:#ae81ff">1</span>) ending_pos[i] <span style="color:#f92672">=</span> now;
+            <span style="color:#66d9ef">else</span> now <span style="color:#f92672">=</span> ending_pos[i];
+        }
+
+<span style="color:#75715e">//        for(int i=0; i&lt;(int)p.size(); i++)
+</span><span style="color:#75715e">//        cout&lt;&lt;p[i]&lt;&lt;&#34; &#34;&lt;&lt;lcp[i]&lt;&lt;&#34; &#34;&lt;&lt;s.substr(p[i],s.size()-p[i])&lt;&lt;endl;
+</span><span style="color:#75715e">//        cout&lt;&lt;endl;
+</span><span style="color:#75715e"></span>
+        LL ans <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+
+        <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>;i<span style="color:#f92672">&lt;</span>lcp.size();i<span style="color:#f92672">++</span>)
+        {
+            <span style="color:#66d9ef">int</span> st <span style="color:#f92672">=</span> p[i] <span style="color:#f92672">+</span> lcp[i];
+            <span style="color:#66d9ef">int</span> en <span style="color:#f92672">=</span> ending_pos[p[i]];
+
+            <span style="color:#66d9ef">if</span>(en<span style="color:#f92672">&gt;</span>st) ans <span style="color:#f92672">+=</span> en<span style="color:#f92672">-</span>st;
+        }
+
+        cout<span style="color:#f92672">&lt;&lt;</span><span style="color:#e6db74">&#34;Case &#34;</span><span style="color:#f92672">&lt;&lt;</span>qq<span style="color:#f92672">&lt;&lt;</span><span style="color:#e6db74">&#34;: &#34;</span>;
+        cout<span style="color:#f92672">&lt;&lt;</span>ans<span style="color:#f92672">&lt;&lt;</span>endl;
+    }
+
+    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+}
+
+<span style="color:#75715e">/**
+</span><span style="color:#75715e">100
+</span><span style="color:#75715e">abacdaba
+</span><span style="color:#75715e">aba
+</span><span style="color:#75715e">**/</span>
+
+<span style="color:#66d9ef">template</span><span style="color:#f92672">&lt;</span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">T1</span>, <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">T2</span><span style="color:#f92672">&gt;</span>
+ostream <span style="color:#f92672">&amp;</span><span style="color:#66d9ef">operator</span> <span style="color:#f92672">&lt;&lt;</span>(ostream <span style="color:#f92672">&amp;</span>os, pair<span style="color:#f92672">&lt;</span>T1,T2<span style="color:#f92672">&gt;&amp;</span>p)
+{
+    os<span style="color:#f92672">&lt;&lt;</span><span style="color:#e6db74">&#34;{&#34;</span><span style="color:#f92672">&lt;&lt;</span>p.first<span style="color:#f92672">&lt;&lt;</span><span style="color:#e6db74">&#34;, &#34;</span><span style="color:#f92672">&lt;&lt;</span>p.second<span style="color:#f92672">&lt;&lt;</span><span style="color:#e6db74">&#34;} &#34;</span>;
+    <span style="color:#66d9ef">return</span> os;
+}
+<span style="color:#66d9ef">template</span> <span style="color:#f92672">&lt;</span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">T</span><span style="color:#f92672">&gt;</span>
+ostream <span style="color:#f92672">&amp;</span><span style="color:#66d9ef">operator</span> <span style="color:#f92672">&lt;&lt;</span>(ostream <span style="color:#f92672">&amp;</span>os, vector<span style="color:#f92672">&lt;</span>T<span style="color:#f92672">&gt;&amp;</span>v)
+{
+    os<span style="color:#f92672">&lt;&lt;</span><span style="color:#e6db74">&#34;[ &#34;</span>;
+    <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>; i<span style="color:#f92672">&lt;</span>v.size(); i<span style="color:#f92672">++</span>)
+    {
+        os<span style="color:#f92672">&lt;&lt;</span>v[i]<span style="color:#f92672">&lt;&lt;</span><span style="color:#e6db74">&#34; &#34;</span> ;
+    }
+    os<span style="color:#f92672">&lt;&lt;</span><span style="color:#e6db74">&#34; ]&#34;</span>;
+    <span style="color:#66d9ef">return</span> os;
+}
+
+<span style="color:#66d9ef">template</span> <span style="color:#f92672">&lt;</span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">T</span><span style="color:#f92672">&gt;</span>
+ostream <span style="color:#f92672">&amp;</span><span style="color:#66d9ef">operator</span> <span style="color:#f92672">&lt;&lt;</span>(ostream <span style="color:#f92672">&amp;</span>os, set<span style="color:#f92672">&lt;</span>T<span style="color:#f92672">&gt;&amp;</span>v)
+{
+    os<span style="color:#f92672">&lt;&lt;</span><span style="color:#e6db74">&#34;[ &#34;</span>;
+    <span style="color:#66d9ef">for</span>(T i:v)
+    {
+        os<span style="color:#f92672">&lt;&lt;</span>i<span style="color:#f92672">&lt;&lt;</span><span style="color:#e6db74">&#34; &#34;</span>;
+    }
+    os<span style="color:#f92672">&lt;&lt;</span><span style="color:#e6db74">&#34; ]&#34;</span>;
+    <span style="color:#66d9ef">return</span> os;
+}
+
+</code></pre></div>
+      </div></div>
+
+  
+  
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other posts</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        
+        <span class="button next">
+            <a href="https://zarif98sjs.github.io/blog/blog/lightoj1314/">
+                <span class="button__text">LightOj 1314 (Names for Babies)</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
+
+  
+
+  
+
+
+
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span> Md. Zarif Ul ALam © 2020 </span>
+    
+        
+      </div>
+  </div>
+</footer>
+
+<script src="https://zarif98sjs.github.io/blog/assets/main.js"></script>
+<script src="https://zarif98sjs.github.io/blog/assets/prism.js"></script>
+
+
+
+
+
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  
+</div>
+
+</body>
+</html>

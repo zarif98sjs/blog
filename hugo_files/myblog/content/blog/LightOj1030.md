@@ -9,8 +9,8 @@ description = "Discovering Gold"
 # Idea
 ---
 Expected Value  
-- The expectation at i is E(i) = (E(i+1) + E(i+2) + E(i+3) + E(i+4) + E(i+5) + E(i+6)) / cnt + gold[i]   
-where cnt is how many of E(i+x) is valid
+- The expectation at `i` is `E(i) = (E(i+1) + E(i+2) + E(i+3) + E(i+4) + E(i+5) + E(i+6)) / cnt + gold[i]`   
+where `cnt` is how many of `E(i+x)` is valid
 
 ```cpp
 

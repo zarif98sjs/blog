@@ -17,7 +17,7 @@
       <pubDate>Sun, 25 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>https://zarif98sjs.github.io/blog/blog/lightoj1005/</guid>
-      <description>Idea 1   Put a rook in row 1 , so there are c ways (c columns) to do that [c * shomadhan(r-1,c-1,k-1)] and don&amp;rsquo;t put a rook in row 1 , so there are r-1 rows [shomadhan(r-1,c,k)] So , ans = c * shomadhan(r-1,c-1,k-1) + shomadhan(r-1,c,k)  Idea 2   take k row from n row (nCk) take k col from n col (nCk) how many ways k rook arrange among themselves (k!</description>
+      <description>Idea 1   Put a rook in row 1 , so there are c ways (c columns) to do that c * solve(r-1,c-1,k-1) and don&amp;rsquo;t put a rook in row 1 , so there are r-1 rows solve(r-1,c,k) So , ans = c * solve(r-1,c-1,k-1) + solve(r-1,c,k)  Idea 2   take k row from n row = nCk take k col from n col = nCk how many ways k rook arrange among themselves = k!</description>
     </item>
     
   </channel>

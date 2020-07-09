@@ -10,7 +10,7 @@ description = "Intersection of Cubes"
 ---
 Geometry
 - Try with 3 squares first .  
-You will see that the area = (min of the upper x - max of the lower x)*(min of the upper y - max of the lower y)
+You will see that the area = (min of the upper `x` - max of the lower `x`)*(min of the upper `y` - max of the lower `y`)
 
 ```cpp
 /* Which of the favors of your Lord will you deny? */

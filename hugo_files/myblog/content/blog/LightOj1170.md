@@ -10,7 +10,7 @@ description = "Counting Perfect BST"
 ---
 Binary Search / Catalan Number
 - If there are n prefect power numbers in [a,b] , Answer is basically Catalan(n)
-- Catalan(n) = (2n)! / (n! *(n+1)!)
+- Catalan(n) = `(2n)! / (n! *(n+1)!)`
 
 # Proof
 ---  

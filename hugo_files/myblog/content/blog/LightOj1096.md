@@ -10,7 +10,7 @@ description = "nth Term"
 ---
 Matrix Exponential
 - [Matrix Expo Resource](http://zobayer.blogspot.com/2010/11/matrix-exponentiation.html)
-- One thing to notice is that here the power will be n-2
+- One thing to notice is that here the power will be `n-2`
 
 ```cpp
 

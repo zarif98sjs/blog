@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>derangement on zarif98sjs</title>
+    <link>https://zarif98sjs.github.io/blog/tags/derangement/</link>
+    <description>Recent content in derangement on zarif98sjs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zarif98sjs.github.io/blog/tags/derangement/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>LightOj 1095 (Arrange the Numbers)</title>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1095/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1095/</guid>
+      <description>Idea  Derangement
+Derangement Idea : http://www.shafaetsplanet.com/planetcoding/?p=600
+Implementation 1  Choose any k elements from first m elements. For i = 1 to n-m , Choose i elements from n-m elements and Derange the rest i.e n-i-k elements  Implementation 2  Use the 2nd idea of derangement given in the link Solution of pin3da using this idea     Implementation 1 code    /** Which of the favors of your Lord will you deny ?</description>
+    </item>
+    
+  </channel>
+</rss>

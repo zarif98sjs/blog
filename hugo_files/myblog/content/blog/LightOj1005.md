@@ -8,19 +8,19 @@ description = "Rooks"
 
 # Idea 1
 ---
-- Put a rook in row 1 , so there are c ways (c columns) to do that [c * shomadhan(r-1,c-1,k-1)]
-- and don't put a rook in row 1 , so there are r-1 rows [shomadhan(r-1,c,k)]
-- So , ans = c * shomadhan(r-1,c-1,k-1) + shomadhan(r-1,c,k)
+- Put a rook in row 1 , so there are c ways (c columns) to do that `c * solve(r-1,c-1,k-1)`
+- and don't put a rook in row 1 , so there are r-1 rows `solve(r-1,c,k)`
+- So , `ans = c * solve(r-1,c-1,k-1) + solve(r-1,c,k)`
 
 # Idea 2
 ------
-- take k row from n row (nCk)
-- take k col from n col (nCk)
-- how many ways k rook arrange among themselves (k!)
+- take `k` row from `n` row  = `nCk`
+- take `k` col from `n` col  = `nCk`
+- how many ways `k` rook arrange among themselves = `k!`
 
-ans = nCk * nCk * k!;
+`ans = nCk * nCk * k!`
 
- comb[n][k] = comb[n-1][k] + comb[n-1][k-1]
+ `comb[n][k] = comb[n-1][k] + comb[n-1][k-1]`
 
 
  ```cpp

@@ -6,10 +6,71 @@
     <description>Recent content in dp on zarif98sjs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://zarif98sjs.github.io/blog/tags/dp/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>LightOj 1079 (Just Another Robbery)</title>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1079/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1079/</guid>
+      <description>Idea  DP
+ Probability of robbing bank a1 , a2 ... an = (1-p1) * (1-p2) * ... (1-pn) where pi = the probability of getting caught from robbing bank i Use this idea to implement a variation of coin change dp .  /**Which of the favors of your Lord will you deny ?**/ #include&amp;lt;bits/stdc++.h&amp;gt;using namespace std; #define LL long long #define PII pair&amp;lt;int,int&amp;gt; #define PLL pair&amp;lt;LL,LL&amp;gt; #define MP make_pair #define F first #define S second #define INF INT_MAX  #define ALL(x) (x).</description>
+    </item>
+    
+    <item>
+      <title>LightOj 1095 (Arrange the Numbers)</title>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1095/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1095/</guid>
+      <description>Idea  Derangement
+Derangement Idea : http://www.shafaetsplanet.com/planetcoding/?p=600
+Implementation 1  Choose any k elements from first m elements. For i = 1 to n-m , Choose i elements from n-m elements and Derange the rest i.e n-i-k elements  Implementation 2  Use the 2nd idea of derangement given in the link Solution of pin3da using this idea     Implementation 1 code    /** Which of the favors of your Lord will you deny ?</description>
+    </item>
+    
+    <item>
+      <title>LightOj 1105 (Fi Binary Number)</title>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1105/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1105/</guid>
+      <description>Idea  Zeckendorf representation | Fibonacci Number
+ The Zeckendorf representation of an integer is the unique way of representing that integer as a sum of non-consecutive Fibonacci numbers. Every positive integer n has a Zeckendorf representation as a sum of non-consecutive Fibonacci numbers Fi For any given positive integer, a representation that satisfies the conditions of Zeckendorf&amp;rsquo;s theorem can be found by using a greedy algorithm, choosing the largest possible Fibonacci number at each stage.</description>
+    </item>
+    
+    <item>
+      <title>LightOj 1037 (Agent 47)</title>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1037/</link>
+      <pubDate>Sun, 31 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1037/</guid>
+      <description>Idea  Bitmask DP
+ The answer will be some permutation of the n person In bitmask dp , the condition for killing will be : take the one for maximum damage among the already killed ones and kill with that  /**Which of the favors of your Lord will you deny ?**/ #include&amp;lt;bits/stdc++.h&amp;gt;using namespace std; #define LL long long #define PII pair&amp;lt;int,int&amp;gt; #define PLL pair&amp;lt;LL,LL&amp;gt; #define MP make_pair #define F first #define S second #define INF INT_MAX  #define ALL(x) (x).</description>
+    </item>
+    
+    <item>
+      <title>LightOj 1057 (Collecting Gold)</title>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1057/</link>
+      <pubDate>Sun, 31 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1057/</guid>
+      <description>Idea  Bitmask DP
+ The answer will be some permutation of all gold positions . Start from any position and use bitmask dp to solve this .  /**Which of the favors of your Lord will you deny ?**/ #include&amp;lt;bits/stdc++.h&amp;gt;using namespace std; #define LL long long #define PII pair&amp;lt;int,int&amp;gt; #define PLL pair&amp;lt;LL,LL&amp;gt; #define MP make_pair #define F first #define S second #define INF INT_MAX  #define ALL(x) (x).begin(), (x).end() #define DBG(x) cerr &amp;lt;&amp;lt; __LINE__ &amp;lt;&amp;lt; &amp;#34; says: &amp;#34; &amp;lt;&amp;lt; #x &amp;lt;&amp;lt; &amp;#34; = &amp;#34; &amp;lt;&amp;lt; (x) &amp;lt;&amp;lt; endl  #include &amp;lt;ext/pb_ds/assoc_container.</description>
+    </item>
+    
+    <item>
+      <title>LightOj 1064 (Throwing Dice)</title>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1064/</link>
+      <pubDate>Sun, 31 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1064/</guid>
+      <description>Idea  DP
+ Solve the number of solution to : a1 + a2 + ..... + an &amp;gt;= target Ans is that divided by total num of outcome i.e 6^n  /**Which of the favors of your Lord will you deny ?**/ #include&amp;lt;bits/stdc++.h&amp;gt;using namespace std; #define LL long long #define PII pair&amp;lt;int,int&amp;gt; #define PLL pair&amp;lt;LL,LL&amp;gt; #define MP make_pair #define F first #define S second #define INF INT_MAX  #define ALL(x) (x).</description>
+    </item>
     
     <item>
       <title>LightOj 1030 (Discovering Gold)</title>
@@ -29,7 +90,7 @@ where cnt is how many of E(i+x) is valid  /**Which of the favors of your Lord wi
       
       <guid>https://zarif98sjs.github.io/blog/blog/lightoj1021/</guid>
       <description>Idea  Bitmask DP
- Take idea from here : https://codeforces.com/blog/entry/19423 Note : Using excess memory will give RTE in this problem . So , allocate memory carefully .  /**Which of the favors of your Lord will you deny ?**/ #include&amp;lt;bits/stdc++.h&amp;gt;using namespace std; #define LL long long #define PII pair&amp;lt;int,int&amp;gt; #define PLL pair&amp;lt;LL,LL&amp;gt; #define MP make_pair #define F first #define S second #define INF INT_MAX  inline void optimizeIO() { ios_base::sync_with_stdio(false); cin.</description>
+ Take idea from here Note : Using excess memory will give RTE in this problem . So , allocate memory carefully .  /**Which of the favors of your Lord will you deny ?**/ #include&amp;lt;bits/stdc++.h&amp;gt;using namespace std; #define LL long long #define PII pair&amp;lt;int,int&amp;gt; #define PLL pair&amp;lt;LL,LL&amp;gt; #define MP make_pair #define F first #define S second #define INF INT_MAX  inline void optimizeIO() { ios_base::sync_with_stdio(false); cin.</description>
     </item>
     
     <item>
@@ -39,7 +100,7 @@ where cnt is how many of E(i+x) is valid  /**Which of the favors of your Lord wi
       
       <guid>https://zarif98sjs.github.io/blog/blog/lightoj1060/</guid>
       <description>Idea  DP
- First of all we check maximum number of permutations possible from the given string &amp;hellip; if it is &amp;lt; n than ans is impossible. Now we have to fix character at each position starting from msb position For fixing the character at any position initially we try to fix smallest character at that position if by placing that character number of permutation formed &amp;gt;= remaining required permutation than fix this charter at that position , and decrease the frequency of this character since this character is used at this position and move to next position , else if no of permutation formed by placing this character is less than the required remaining permutation than decrease remaining permutation by the number of permutation formed by placing this character at that position ( since this count times number of permutations comes in between current to final permutation ) and try to find next character for this position .</description>
+ First of all we check maximum number of permutations possible from the given string &amp;hellip; if it is &amp;lt; n than answer is impossible. Now we have to fix character at each position starting from MSB position For fixing the character at any position initially we try to fix smallest character at that position if by placing that character number of permutation formed &amp;gt;= remaining required permutation than fix this charter at that position , and decrease the frequency of this character since this character is used at this position and move to next position , else if no of permutation formed by placing this character is less than the required remaining permutation than decrease remaining permutation by the number of permutation formed by placing this character at that position ( since this count times number of permutations comes in between current to final permutation ) and try to find next character for this position .</description>
     </item>
     
     <item>

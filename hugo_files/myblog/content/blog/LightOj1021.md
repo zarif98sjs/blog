@@ -9,7 +9,7 @@ description = "Painful Bases"
 # Idea
 ---
 Bitmask DP  
-- Take idea from here : https://codeforces.com/blog/entry/19423  
+- Take idea from [here](https://codeforces.com/blog/entry/19423) 
 - Note : Using excess memory will give RTE in this problem . So , allocate memory carefully .
 
 ```cpp

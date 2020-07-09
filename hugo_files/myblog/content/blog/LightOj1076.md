@@ -11,7 +11,7 @@ description = "Get the Containers"
 Binary Search
 
 - The target is to minimize the maximum capacity.
-- Binary search over capacity 'd' . If possible with capacity 'd' , minimize and if not maximize using binary search .
+- Binary search over capacity `d` . If possible with capacity `d` , minimize and if not maximize using binary search .
 
 ```cpp
 

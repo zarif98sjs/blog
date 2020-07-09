@@ -11,7 +11,7 @@ description = "Funny Knapsack"
 Meet In The Middle
 - The idea is that you split the large set into two small sets, small enough for you to handle them using the standard algorithm you know,
 and then use the result from these two small sets to arrive at the required solution.
-- ***Complexity*** : O(2^(n / 2) log (2^(n / 2))
+- ***Complexity*** : `O(2^(n / 2) log (2^(n / 2))`
 
 
 ```cpp

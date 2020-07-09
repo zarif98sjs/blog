@@ -1,15 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>number theory on zarif98sjs</title>
+    <title>Number Theory on zarif98sjs</title>
     <link>https://zarif98sjs.github.io/blog/tags/number-theory/</link>
-    <description>Recent content in number theory on zarif98sjs</description>
+    <description>Recent content in Number Theory on zarif98sjs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://zarif98sjs.github.io/blog/tags/number-theory/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>LightOj 1054 (Efficient Pseudo Code)</title>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1054/</link>
+      <pubDate>Tue, 02 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1054/</guid>
+      <description>Idea  Prime Factorization | Geometric Progression
+  Sum of Divisors of n can be calculated using Prime Factorization .
+If $$ n = {p_{0}}^{q_{0}} * {p_{1}}^{q_{1}} * &amp;hellip; * {p_{n}}^{q_{n}} $$ Then , $$ Sum of Divisor = ({p_{0}}^{0} + {p_{0}}^{1} + &amp;hellip; + {p_{0}}^{q_{0}}) * &amp;hellip; * ({p_{n}}^{0} + {p_{n}}^{1} + &amp;hellip; + {p_{n}}^{q_{n}}) $$
+  For a geometric progression , if first term is a and ration is r ,</description>
+    </item>
     
     <item>
       <title>LightOj 1096 (nth Term)</title>

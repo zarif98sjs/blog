@@ -10,8 +10,8 @@ description = "Olympics"
 ---
 Binary Search / Geometry
 
-- Total Perimeter = 2(s+a) = 2*(r*theta +a) = 2*(sqrt(a^2+b^2)*arctan(b/a) + a)
-- So, we can Binary Search over a
+- Total Perimeter = `2(s+a)` = `2*(r*theta +a)` = `2*(sqrt(a^2+b^2)*arctan(b/a) + a)`
+- So, we can Binary Search over `a`
 
 ```cpp
 

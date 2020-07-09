@@ -6,10 +6,126 @@
     <description>Recent content on zarif98sjs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 25 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 02 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://zarif98sjs.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>LightOj 1428 (Melody Comparison)</title>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1428/</link>
+      <pubDate>Thu, 02 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1428/</guid>
+      <description>Idea   First , think an easier version of this problem . How many distinct substrings are possible of a string S ?  Let&amp;rsquo;s solve an easier version of this easy problem . How many substrings are possible of a string S ?
+For any p[i] i.e for any suffix , the number of possible substrings are (S.size() - p[i])
+Then the ending position for possible substrings starts from p[i] and ends at S.</description>
+    </item>
+    
+    <item>
+      <title>LightOj 1314 (Names for Babies)</title>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1314/</link>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1314/</guid>
+      <description>Idea    Let&amp;rsquo;s think of an easier version of the current problem . How many distinct substrings are possible ?
+If you notice the LCP array carefully , you will notice that you can get the repeated substring from each value of the array i.e LCP[i] number of substrings are repeated for that suffix.
+So , The number of distinct substring = Number of total possible substrings - Sum of all LCP values</description>
+    </item>
+    
+    <item>
+      <title>LightOj 1347 (Aladdin and the Magical Lamp)</title>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1347/</link>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1347/</guid>
+      <description>Idea    Let&amp;rsquo;s think an easier version of this problem . We have to find the longest common substring of 2 strings .
+In that case , we concatenate 2 strings and build the suffix array .
+Now the answer is the max of all LCP(i,j) where i belongs to the suffix starting from the first string and j belongs to the suffix starting from the second string and LCP(i,j) means longest common prefix of suffix starting from i and j .</description>
+    </item>
+    
+    <item>
+      <title>LightOj 1248 (Dice III)</title>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1248/</link>
+      <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1248/</guid>
+      <description>Idea   First expected value problem I solved was this
+Now , I took idea from that problem and solved it by converting this problem to that problem . Another way to look at this problem is there are n 1&amp;rsquo;s and in one move we can make any 1 to 0 . Now the question becomes the expected value of all becoming 0 .  /** Which of the favors of your Lord will you deny ?</description>
+    </item>
+    
+    <item>
+      <title>LightOj 1054 (Efficient Pseudo Code)</title>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1054/</link>
+      <pubDate>Tue, 02 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1054/</guid>
+      <description>Idea  Prime Factorization | Geometric Progression
+  Sum of Divisors of n can be calculated using Prime Factorization .
+If $$ n = {p_{0}}^{q_{0}} * {p_{1}}^{q_{1}} * &amp;hellip; * {p_{n}}^{q_{n}} $$ Then , $$ Sum of Divisor = ({p_{0}}^{0} + {p_{0}}^{1} + &amp;hellip; + {p_{0}}^{q_{0}}) * &amp;hellip; * ({p_{n}}^{0} + {p_{n}}^{1} + &amp;hellip; + {p_{n}}^{q_{n}}) $$
+  For a geometric progression , if first term is a and ration is r ,</description>
+    </item>
+    
+    <item>
+      <title>LightOj 1079 (Just Another Robbery)</title>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1079/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1079/</guid>
+      <description>Idea  DP
+ Probability of robbing bank a1 , a2 ... an = (1-p1) * (1-p2) * ... (1-pn) where pi = the probability of getting caught from robbing bank i Use this idea to implement a variation of coin change dp .  /**Which of the favors of your Lord will you deny ?**/ #include&amp;lt;bits/stdc++.h&amp;gt;using namespace std; #define LL long long #define PII pair&amp;lt;int,int&amp;gt; #define PLL pair&amp;lt;LL,LL&amp;gt; #define MP make_pair #define F first #define S second #define INF INT_MAX  #define ALL(x) (x).</description>
+    </item>
+    
+    <item>
+      <title>LightOj 1095 (Arrange the Numbers)</title>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1095/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1095/</guid>
+      <description>Idea  Derangement
+Derangement Idea : http://www.shafaetsplanet.com/planetcoding/?p=600
+Implementation 1  Choose any k elements from first m elements. For i = 1 to n-m , Choose i elements from n-m elements and Derange the rest i.e n-i-k elements  Implementation 2  Use the 2nd idea of derangement given in the link Solution of pin3da using this idea     Implementation 1 code    /** Which of the favors of your Lord will you deny ?</description>
+    </item>
+    
+    <item>
+      <title>LightOj 1105 (Fi Binary Number)</title>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1105/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1105/</guid>
+      <description>Idea  Zeckendorf representation | Fibonacci Number
+ The Zeckendorf representation of an integer is the unique way of representing that integer as a sum of non-consecutive Fibonacci numbers. Every positive integer n has a Zeckendorf representation as a sum of non-consecutive Fibonacci numbers Fi For any given positive integer, a representation that satisfies the conditions of Zeckendorf&amp;rsquo;s theorem can be found by using a greedy algorithm, choosing the largest possible Fibonacci number at each stage.</description>
+    </item>
+    
+    <item>
+      <title>LightOj 1037 (Agent 47)</title>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1037/</link>
+      <pubDate>Sun, 31 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1037/</guid>
+      <description>Idea  Bitmask DP
+ The answer will be some permutation of the n person In bitmask dp , the condition for killing will be : take the one for maximum damage among the already killed ones and kill with that  /**Which of the favors of your Lord will you deny ?**/ #include&amp;lt;bits/stdc++.h&amp;gt;using namespace std; #define LL long long #define PII pair&amp;lt;int,int&amp;gt; #define PLL pair&amp;lt;LL,LL&amp;gt; #define MP make_pair #define F first #define S second #define INF INT_MAX  #define ALL(x) (x).</description>
+    </item>
+    
+    <item>
+      <title>LightOj 1057 (Collecting Gold)</title>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1057/</link>
+      <pubDate>Sun, 31 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1057/</guid>
+      <description>Idea  Bitmask DP
+ The answer will be some permutation of all gold positions . Start from any position and use bitmask dp to solve this .  /**Which of the favors of your Lord will you deny ?**/ #include&amp;lt;bits/stdc++.h&amp;gt;using namespace std; #define LL long long #define PII pair&amp;lt;int,int&amp;gt; #define PLL pair&amp;lt;LL,LL&amp;gt; #define MP make_pair #define F first #define S second #define INF INT_MAX  #define ALL(x) (x).begin(), (x).end() #define DBG(x) cerr &amp;lt;&amp;lt; __LINE__ &amp;lt;&amp;lt; &amp;#34; says: &amp;#34; &amp;lt;&amp;lt; #x &amp;lt;&amp;lt; &amp;#34; = &amp;#34; &amp;lt;&amp;lt; (x) &amp;lt;&amp;lt; endl  #include &amp;lt;ext/pb_ds/assoc_container.</description>
+    </item>
+    
+    <item>
+      <title>LightOj 1064 (Throwing Dice)</title>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1064/</link>
+      <pubDate>Sun, 31 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1064/</guid>
+      <description>Idea  DP
+ Solve the number of solution to : a1 + a2 + ..... + an &amp;gt;= target Ans is that divided by total num of outcome i.e 6^n  /**Which of the favors of your Lord will you deny ?**/ #include&amp;lt;bits/stdc++.h&amp;gt;using namespace std; #define LL long long #define PII pair&amp;lt;int,int&amp;gt; #define PLL pair&amp;lt;LL,LL&amp;gt; #define MP make_pair #define F first #define S second #define INF INT_MAX  #define ALL(x) (x).</description>
+    </item>
     
     <item>
       <title>Creating your first website using Hugo &amp; GitHub Pages</title>
@@ -100,7 +216,7 @@ Then there must be at least 2 shaft such that if one fails , other works Articul
       
       <guid>https://zarif98sjs.github.io/blog/blog/lightoj1076/</guid>
       <description>Idea  Binary Search
- The target is to minimize the maximum capacity. Binary search over capacity &amp;lsquo;d&amp;rsquo; . If possible with capacity &amp;lsquo;d&amp;rsquo; , minimize and if not maximize using binary search .  /** Which of the favors of your Lord will you deny ? **/ #include&amp;lt;bits/stdc++.h&amp;gt;using namespace std; #define LL long long #define PII pair&amp;lt;int,int&amp;gt; #define PLL pair&amp;lt;LL,LL&amp;gt; #define MP make_pair #define F first #define S second #define INF INT_MAX  #define ALL(x) (x).</description>
+ The target is to minimize the maximum capacity. Binary search over capacity d . If possible with capacity d , minimize and if not maximize using binary search .  /** Which of the favors of your Lord will you deny ? **/ #include&amp;lt;bits/stdc++.h&amp;gt;using namespace std; #define LL long long #define PII pair&amp;lt;int,int&amp;gt; #define PLL pair&amp;lt;LL,LL&amp;gt; #define MP make_pair #define F first #define S second #define INF INT_MAX  #define ALL(x) (x).</description>
     </item>
     
     <item>
@@ -130,7 +246,7 @@ where cnt is how many of E(i+x) is valid  /**Which of the favors of your Lord wi
       
       <guid>https://zarif98sjs.github.io/blog/blog/lightoj1021/</guid>
       <description>Idea  Bitmask DP
- Take idea from here : https://codeforces.com/blog/entry/19423 Note : Using excess memory will give RTE in this problem . So , allocate memory carefully .  /**Which of the favors of your Lord will you deny ?**/ #include&amp;lt;bits/stdc++.h&amp;gt;using namespace std; #define LL long long #define PII pair&amp;lt;int,int&amp;gt; #define PLL pair&amp;lt;LL,LL&amp;gt; #define MP make_pair #define F first #define S second #define INF INT_MAX  inline void optimizeIO() { ios_base::sync_with_stdio(false); cin.</description>
+ Take idea from here Note : Using excess memory will give RTE in this problem . So , allocate memory carefully .  /**Which of the favors of your Lord will you deny ?**/ #include&amp;lt;bits/stdc++.h&amp;gt;using namespace std; #define LL long long #define PII pair&amp;lt;int,int&amp;gt; #define PLL pair&amp;lt;LL,LL&amp;gt; #define MP make_pair #define F first #define S second #define INF INT_MAX  inline void optimizeIO() { ios_base::sync_with_stdio(false); cin.</description>
     </item>
     
     <item>
@@ -140,7 +256,7 @@ where cnt is how many of E(i+x) is valid  /**Which of the favors of your Lord wi
       
       <guid>https://zarif98sjs.github.io/blog/blog/lightoj1060/</guid>
       <description>Idea  DP
- First of all we check maximum number of permutations possible from the given string &amp;hellip; if it is &amp;lt; n than ans is impossible. Now we have to fix character at each position starting from msb position For fixing the character at any position initially we try to fix smallest character at that position if by placing that character number of permutation formed &amp;gt;= remaining required permutation than fix this charter at that position , and decrease the frequency of this character since this character is used at this position and move to next position , else if no of permutation formed by placing this character is less than the required remaining permutation than decrease remaining permutation by the number of permutation formed by placing this character at that position ( since this count times number of permutations comes in between current to final permutation ) and try to find next character for this position .</description>
+ First of all we check maximum number of permutations possible from the given string &amp;hellip; if it is &amp;lt; n than answer is impossible. Now we have to fix character at each position starting from MSB position For fixing the character at any position initially we try to fix smallest character at that position if by placing that character number of permutation formed &amp;gt;= remaining required permutation than fix this charter at that position , and decrease the frequency of this character since this character is used at this position and move to next position , else if no of permutation formed by placing this character is less than the required remaining permutation than decrease remaining permutation by the number of permutation formed by placing this character at that position ( since this count times number of permutations comes in between current to final permutation ) and try to find next character for this position .</description>
     </item>
     
     <item>
@@ -179,7 +295,7 @@ i.e a + b &amp;gt; c [where a&amp;lt;=b&amp;lt;=c]  /** Which of the favors of y
       <pubDate>Sun, 25 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>https://zarif98sjs.github.io/blog/blog/lightoj1005/</guid>
-      <description>Idea 1   Put a rook in row 1 , so there are c ways (c columns) to do that [c * shomadhan(r-1,c-1,k-1)] and don&amp;rsquo;t put a rook in row 1 , so there are r-1 rows [shomadhan(r-1,c,k)] So , ans = c * shomadhan(r-1,c-1,k-1) + shomadhan(r-1,c,k)  Idea 2   take k row from n row (nCk) take k col from n col (nCk) how many ways k rook arrange among themselves (k!</description>
+      <description>Idea 1   Put a rook in row 1 , so there are c ways (c columns) to do that c * solve(r-1,c-1,k-1) and don&amp;rsquo;t put a rook in row 1 , so there are r-1 rows solve(r-1,c,k) So , ans = c * solve(r-1,c-1,k-1) + solve(r-1,c,k)  Idea 2   take k row from n row = nCk take k col from n col = nCk how many ways k rook arrange among themselves = k!</description>
     </item>
     
     <item>

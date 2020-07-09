@@ -11,8 +11,8 @@ description = "nth Permutation"
 DP
 
 - First of all we check maximum number of permutations possible from the
-given string ... if it is < n than ans is impossible.
-- Now we have to fix  character at each position starting from msb position 
+given string ... if it is < `n` than answer is impossible.
+- Now we have to fix  character at each position starting from MSB position 
 - For fixing the character at any position initially we try to fix smallest character
 at that position if by placing that character number of permutation formed >=  remaining
 required permutation than fix this charter at that position ,
