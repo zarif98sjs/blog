@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>suffix array on zarif98sjs</title>
+    <link>https://zarif98sjs.github.io/blog/tags/suffix-array/</link>
+    <description>Recent content in suffix array on zarif98sjs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Jul 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zarif98sjs.github.io/blog/tags/suffix-array/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>LightOj 1428 (Melody Comparison)</title>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1428/</link>
+      <pubDate>Thu, 02 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1428/</guid>
+      <description>Idea   First , think an easier version of this problem . How many distinct substrings are possible of a string S ?  Let&amp;rsquo;s solve an easier version of this easy problem . How many substrings are possible of a string S ?
+For any p[i] i.e for any suffix , the number of possible substrings are (S.size() - p[i])
+Then the ending position for possible substrings starts from p[i] and ends at S.</description>
+    </item>
+    
+    <item>
+      <title>LightOj 1314 (Names for Babies)</title>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1314/</link>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1314/</guid>
+      <description>Idea    Let&amp;rsquo;s think of an easier version of the current problem . How many distinct substrings are possible ?
+If you notice the LCP array carefully , you will notice that you can get the repeated substring from each value of the array i.e LCP[i] number of substrings are repeated for that suffix.
+So , The number of distinct substring = Number of total possible substrings - Sum of all LCP values</description>
+    </item>
+    
+    <item>
+      <title>LightOj 1347 (Aladdin and the Magical Lamp)</title>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1347/</link>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1347/</guid>
+      <description>Idea    Let&amp;rsquo;s think an easier version of this problem . We have to find the longest common substring of 2 strings .
+In that case , we concatenate 2 strings and build the suffix array .
+Now the answer is the max of all LCP(i,j) where i belongs to the suffix starting from the first string and j belongs to the suffix starting from the second string and LCP(i,j) means longest common prefix of suffix starting from i and j .</description>
+    </item>
+    
+  </channel>
+</rss>

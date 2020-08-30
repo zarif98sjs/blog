@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>meet in the middle on zarif98sjs</title>
+    <link>https://zarif98sjs.github.io/blog/tags/meet-in-the-middle/</link>
+    <description>Recent content in meet in the middle on zarif98sjs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 10 May 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zarif98sjs.github.io/blog/tags/meet-in-the-middle/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>LightOj 1127 (Funny Knapsack)</title>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1127/</link>
+      <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1127/</guid>
+      <description>Idea  Meet In The Middle
+ The idea is that you split the large set into two small sets, small enough for you to handle them using the standard algorithm you know, and then use the result from these two small sets to arrive at the required solution. Complexity : O(2^(n / 2) log (2^(n / 2))  /** Which of the favors of your Lord will you deny ?</description>
+    </item>
+    
+    <item>
+      <title>LightOj 1235 (Coin Change IV)</title>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1235/</link>
+      <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1235/</guid>
+      <description>Idea  Meet In The Middle
+ The idea is that you split the large set into two small sets, small enough for you to handle them using the standard algorithm you know, and then use the result from these two small sets to arrive at the required solution. Note that , if we made 2 same vectors of n elements , and calculated subset sum by taking 0/1 times of the elements, then that would get TLE .</description>
+    </item>
+    
+  </channel>
+</rss>

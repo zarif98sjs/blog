@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>geometry on zarif98sjs</title>
+    <link>https://zarif98sjs.github.io/blog/tags/geometry/</link>
+    <description>Recent content in geometry on zarif98sjs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 22 Nov 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zarif98sjs.github.io/blog/tags/geometry/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>LightOj 1063 (Crossed Ladders)</title>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1062/</link>
+      <pubDate>Thu, 22 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1062/</guid>
+      <description>Idea  Binary Search / Geometry
+ Intersection of 2 line using cross product : http://bit.ly/line_intersection  /** Which of the favors of your Lord will you deny ? **/ #include&amp;lt;bits/stdc++.h&amp;gt;using namespace std; #define LL long long #define PII pair&amp;lt;int,int&amp;gt; #define PLI pair&amp;lt;LL,int&amp;gt; #define LPII pair&amp;lt;LL, pair&amp;lt;int,int&amp;gt; &amp;gt; #define MP make_pair #define F first #define S second #define LINF LLONG_MAX  //#define EPS 1e-11 double INF=1e100; double EPS=1e-12; struct PT { double x,y; PT() {} PT(double x,double y) : x(x), y(y) {} PT(const PT &amp;amp;p) : x(p.</description>
+    </item>
+    
+    <item>
+      <title>LightOj 1211 (Intersection of Cubes)</title>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1211/</link>
+      <pubDate>Thu, 22 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1211/</guid>
+      <description>Idea  Geometry
+ Try with 3 squares first .
+You will see that the area = (min of the upper x - max of the lower x)*(min of the upper y - max of the lower y)  /* Which of the favors of your Lord will you deny? */ #include&amp;lt;bits/stdc++.h&amp;gt;using namespace std; #define pi acos(-1)  #define SI(n) scanf(&amp;#34;%d&amp;#34;,&amp;amp;n) #define SLL(n) scanf(&amp;#34;%lld&amp;#34;,&amp;amp;n) #define SULL(n) scanf(&amp;#34;%llu&amp;#34;,&amp;amp;n) #define SC(n) scanf(&amp;#34;%c&amp;#34;,&amp;amp;n) #define SD(n) scanf(&amp;#34;%lf&amp;#34;,&amp;amp;n)  #define fr(i,a,b) for(int i=a ,_b=(b) ;i&amp;lt;= _b;i++)  #define LL long long #define PUB push_back #define POB pop_back #define MP make_pair; #define PII pair&amp;lt;int,int&amp;gt; #define PLL pair&amp;lt;ll,ll&amp;gt;  #define GCD __gcd #define DEBUG cout&amp;lt;&amp;lt;&amp;#34;aw&amp;#34;&amp;lt;&amp;lt;endl;  int main() { //freopen(&amp;#34;LOJ1211.</description>
+    </item>
+    
+    <item>
+      <title>LightOj 1056 (Olympics)</title>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1056/</link>
+      <pubDate>Wed, 21 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1056/</guid>
+      <description>Idea  Binary Search / Geometry
+ Total Perimeter = 2(s+a) = 2*(r*theta +a) = 2*(sqrt(a^2+b^2)*arctan(b/a) + a) So, we can Binary Search over a  /** Which of the favors of your Lord will you deny ? **/ #include&amp;lt;bits/stdc++.h&amp;gt;using namespace std; #define LL long long #define PII pair&amp;lt;int,int&amp;gt; #define PLI pair&amp;lt;LL,int&amp;gt; #define LPII pair&amp;lt;LL, pair&amp;lt;int,int&amp;gt; &amp;gt; #define MP make_pair #define F first #define S second #define LINF LLONG_MAX  #define EPS 1e-11  int main() { int tc; scanf(&amp;#34;%d&amp;#34;,&amp;amp;tc); //freopen(&amp;#34;LightOj1056.</description>
+    </item>
+    
+    <item>
+      <title>LightOj 1043 (Triangle Partitioning)</title>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1043/</link>
+      <pubDate>Tue, 20 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1043/</guid>
+      <description>Idea 1  Binary Search
+ AB/AD = AC/AE = BC/DE So , AE = (ACAD)/AB
+and , DE = (BCAD)/AB The area ratio of those two triangles can be calculated as a function of AD .
+So, we can Binary Search over AD  Idea 2  Geometry
+ AB/AD = AC/AE = BC/DE We know that , If two triangles are similar, then the ratio of the area of both triangles is proportional to the square of the ratio of their corresponding sides.</description>
+    </item>
+    
+  </channel>
+</rss>

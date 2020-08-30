@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on zarif98sjs</title>
+    <link>https://zarif98sjs.github.io/blog/tags/</link>
+    <description>Recent content in Tags on zarif98sjs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Jul 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zarif98sjs.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>binary search</title>
+      <link>https://zarif98sjs.github.io/blog/tags/binary-search/</link>
+      <pubDate>Thu, 02 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/tags/binary-search/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cp</title>
+      <link>https://zarif98sjs.github.io/blog/tags/cp/</link>
+      <pubDate>Thu, 02 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/tags/cp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kmp</title>
+      <link>https://zarif98sjs.github.io/blog/tags/kmp/</link>
+      <pubDate>Thu, 02 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/tags/kmp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>lightoj</title>
+      <link>https://zarif98sjs.github.io/blog/tags/lightoj/</link>
+      <pubDate>Thu, 02 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/tags/lightoj/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>problem solving</title>
+      <link>https://zarif98sjs.github.io/blog/tags/problem-solving/</link>
+      <pubDate>Thu, 02 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/tags/problem-solving/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>string</title>
+      <link>https://zarif98sjs.github.io/blog/tags/string/</link>
+      <pubDate>Thu, 02 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/tags/string/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>suffix array</title>
+      <link>https://zarif98sjs.github.io/blog/tags/suffix-array/</link>
+      <pubDate>Thu, 02 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/tags/suffix-array/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>two pointer</title>
+      <link>https://zarif98sjs.github.io/blog/tags/two-pointer/</link>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/tags/two-pointer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>expected value</title>
+      <link>https://zarif98sjs.github.io/blog/tags/expected-value/</link>
+      <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/tags/expected-value/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>probability</title>
+      <link>https://zarif98sjs.github.io/blog/tags/probability/</link>
+      <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/tags/probability/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Number Theory</title>
+      <link>https://zarif98sjs.github.io/blog/tags/number-theory/</link>
+      <pubDate>Tue, 02 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/tags/number-theory/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>combinatorics</title>
+      <link>https://zarif98sjs.github.io/blog/tags/combinatorics/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/tags/combinatorics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>derangement</title>
+      <link>https://zarif98sjs.github.io/blog/tags/derangement/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/tags/derangement/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dp</title>
+      <link>https://zarif98sjs.github.io/blog/tags/dp/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/tags/dp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bitmask dp</title>
+      <link>https://zarif98sjs.github.io/blog/tags/bitmask-dp/</link>
+      <pubDate>Sun, 31 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/tags/bitmask-dp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>github pages</title>
+      <link>https://zarif98sjs.github.io/blog/tags/github-pages/</link>
+      <pubDate>Mon, 25 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/tags/github-pages/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https://zarif98sjs.github.io/blog/tags/hugo/</link>
+      <pubDate>Mon, 25 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>website</title>
+      <link>https://zarif98sjs.github.io/blog/tags/website/</link>
+      <pubDate>Mon, 25 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/tags/website/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>articulation</title>
+      <link>https://zarif98sjs.github.io/blog/tags/articulation/</link>
+      <pubDate>Tue, 12 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/tags/articulation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>graph theory</title>
+      <link>https://zarif98sjs.github.io/blog/tags/graph-theory/</link>
+      <pubDate>Tue, 12 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/tags/graph-theory/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>meet in the middle</title>
+      <link>https://zarif98sjs.github.io/blog/tags/meet-in-the-middle/</link>
+      <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/tags/meet-in-the-middle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>codesamurai</title>
+      <link>https://zarif98sjs.github.io/blog/tags/codesamurai/</link>
+      <pubDate>Wed, 25 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/tags/codesamurai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>du</title>
+      <link>https://zarif98sjs.github.io/blog/tags/du/</link>
+      <pubDate>Wed, 25 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/tags/du/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hackathon</title>
+      <link>https://zarif98sjs.github.io/blog/tags/hackathon/</link>
+      <pubDate>Wed, 25 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/tags/hackathon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>buet</title>
+      <link>https://zarif98sjs.github.io/blog/tags/buet/</link>
+      <pubDate>Sat, 20 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/tags/buet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>csefest</title>
+      <link>https://zarif98sjs.github.io/blog/tags/csefest/</link>
+      <pubDate>Sat, 20 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/tags/csefest/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>recursion</title>
+      <link>https://zarif98sjs.github.io/blog/tags/recursion/</link>
+      <pubDate>Sun, 25 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/tags/recursion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scc</title>
+      <link>https://zarif98sjs.github.io/blog/tags/scc/</link>
+      <pubDate>Sun, 25 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/tags/scc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>topsort</title>
+      <link>https://zarif98sjs.github.io/blog/tags/topsort/</link>
+      <pubDate>Sun, 25 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/tags/topsort/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>geometry</title>
+      <link>https://zarif98sjs.github.io/blog/tags/geometry/</link>
+      <pubDate>Thu, 22 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/tags/geometry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>matrix exponential</title>
+      <link>https://zarif98sjs.github.io/blog/tags/matrix-exponential/</link>
+      <pubDate>Thu, 22 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/tags/matrix-exponential/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>two pointer on zarif98sjs</title>
+    <link>https://zarif98sjs.github.io/blog/tags/two-pointer/</link>
+    <description>Recent content in two pointer on zarif98sjs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Jul 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zarif98sjs.github.io/blog/tags/two-pointer/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>LightOj 1347 (Aladdin and the Magical Lamp)</title>
+      <link>https://zarif98sjs.github.io/blog/blog/lightoj1347/</link>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/blog/lightoj1347/</guid>
+      <description>Idea    Let&amp;rsquo;s think an easier version of this problem . We have to find the longest common substring of 2 strings .
+In that case , we concatenate 2 strings and build the suffix array .
+Now the answer is the max of all LCP(i,j) where i belongs to the suffix starting from the first string and j belongs to the suffix starting from the second string and LCP(i,j) means longest common prefix of suffix starting from i and j .</description>
+    </item>
+    
+  </channel>
+</rss>

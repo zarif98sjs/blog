@@ -15,7 +15,7 @@ and then use the result from these two small sets to arrive at the required solu
 then that would get TLE .  
 The Time Complexity will be : `O(2^(n / 2) log (2^(n / 2))` [here , n = 2*18 = 36]
 - Here we calculated subset sum of n/2 elements by taking 0/1/2 times of the elements.  
-Complexity : `O(3^(n / 2) log (3^(n / 2)`) [here , n = 18]
+Complexity : `O(3^(n / 2) log (3^(n / 2))` [here , n = 18]
 
 ```cpp
 
