@@ -29,7 +29,7 @@ The proposed model has the following sub-modules :
 
 The depth aware flow projection layer is used to obtain the `intermediate flows` and then the `adaptive warping layer` is used to warp the input frames , depth maps and contextual features . The last sub-module `Frame Synthesize Network` generates the output frame with `residual learning` .
 
-{{< figure src="/img/context_extraction.png" alt="Context Extraction" position="center" caption="Structure of Context Extraction Network" captionPosition="center" captionStyle="color: #FFFFFF;" >}}
+{{< figure src="/blog/img/context_extraction.png" alt="Context Extraction" position="center" caption="Structure of Context Extraction Network" captionPosition="center" captionStyle="color: #AAAFFF;" >}}
 
 # Evaluation Datasets
 **Middlebury** : Widely used to evaluate video frame interpolation methods. Image Resolution 640 x 480 pixels  
@@ -40,7 +40,7 @@ The depth aware flow projection layer is used to obtain the `intermediate flows`
 `Interpolation Error` **(IE)** , `Normalized Interpolation Error` **(NIE)** .   
 Lower Interpolation errors indicate higher performance . 
 
-{{< figure src="img/evaluation.png" alt="Evaluation" position="center" caption="Comparison on the Middlebury Evaluation set" captionPosition="center" captionStyle="color: #FFFFFF;" >}}
+{{< figure src="/blog/img/evaluation.png" alt="Evaluation" position="center" caption="Comparison on the Middlebury Evaluation set" captionPosition="center" captionStyle="color: #AAAFFF;" >}}
 
 # Where does it stand compared to the SOTA models ?
 The proposed model outperforms most of the current state of the art models. This model ranks 1st in terms of NIE and 3rd in terms of IE among all published algorithms on the Middlebury Website . A comparison is shown in the Figure above
