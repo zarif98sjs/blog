@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>review on zarif98sjs</title>
+    <link>https://zarif98sjs.github.io/blog/tags/review/</link>
+    <description>Recent content in review on zarif98sjs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 30 Sep 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zarif98sjs.github.io/blog/tags/review/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A Research Paper Synopsis : Depth Aware Video Frame Interpolation</title>
+      <link>https://zarif98sjs.github.io/blog/blog/depthawarevideoframeinterpolation/</link>
+      <pubDate>Wed, 30 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/blog/depthawarevideoframeinterpolation/</guid>
+      <description>Introduction The idea of video frame interpolation has been prevalent for quite a long time. The problem is defined like this : from a given set of images / video , synthesize non-existent frames in-between the original frames .
+ Before the deep learning era people tried to solve this problem using optical flow .But computing the global optical flow and interpolating the video from this information is computationally expensive and non effective in real world application .</description>
+    </item>
+    
+  </channel>
+</rss>
