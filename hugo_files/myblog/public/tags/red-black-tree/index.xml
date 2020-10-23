@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>red black tree on zarif98sjs</title>
+    <link>https://zarif98sjs.github.io/blog/tags/red-black-tree/</link>
+    <description>Recent content in red black tree on zarif98sjs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 19 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://zarif98sjs.github.io/blog/tags/red-black-tree/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RedBlackTree : An Intuitive Approach</title>
+      <link>https://zarif98sjs.github.io/blog/blog/redbacktree/</link>
+      <pubDate>Mon, 19 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/blog/blog/redbacktree/</guid>
+      <description>RedBlackTree : An Intuitive Approach  Monologue  I remember when the first time I studied Red Black Tree (RBT) , it was an enigma . A seemingly random rotations and colorings seems to somehow balance a Binary Search Tree (BST) . But I had no intuition for why these rotations and colorings seem to magically balance the BST . I used to read these horrible case works and my reaction everytime after it got balanced was -</description>
+    </item>
+    
+  </channel>
+</rss>
