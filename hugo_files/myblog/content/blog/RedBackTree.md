@@ -1,6 +1,6 @@
 +++
 title = "RedBlackTree : An Intuitive Approach"
-date = "2020-10-19"
+date = "2020-10-23"
 author = "~25 min read"
 tags = ["data structure", "binary search tree" ,"balanced binary search tree" , "red black tree"]
 cover = "/blog/img/RBTDrawings/Images/Title.png"
