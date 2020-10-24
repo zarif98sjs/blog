@@ -9,6 +9,8 @@ description = "Demystifying Red Black Trees!"
 
 # **RedBlackTree : An Intuitive Approach**
 
+**You can find the `original writing` in this [GitHub Repo](https://github.com/zarif98sjs/RedBlackTree-An-Intuitive-Approach)**
+
 > # **Monologue**
 
 I remember when the first time I studied **`Red Black Tree`** **(RBT)** , it was an enigma . A seemingly random _rotations_ and _colorings_ seems to somehow balance a **`Binary Search Tree`** **(BST)** . But I had no intuition for why these rotations and colorings seem to magically balance the BST . I used to read these horrible case works and my reaction everytime after it got balanced was - 
