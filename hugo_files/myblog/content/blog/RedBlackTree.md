@@ -1,5 +1,5 @@
 +++
-title = "RedBlackTree : An Intuitive Approach"
+title = "Red Black Tree : An Intuitive Approach"
 date = "2020-10-23"
 author = "~25 min read"
 tags = ["data structure", "binary search tree" ,"balanced binary search tree" , "red black tree"]
@@ -7,7 +7,7 @@ cover = "/blog/img/RBTDrawings/Images/Title.png"
 description = "Demystifying Red Black Trees!"
 +++
 
-# **RedBlackTree : An Intuitive Approach**
+# **Red Black Tree : An Intuitive Approach**
 
 **You can find the `original writing` in this [GitHub Repo](https://github.com/zarif98sjs/RedBlackTree-An-Intuitive-Approach)**
 
