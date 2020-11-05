@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
   
-    <title>LightOj 1096 (nth Term) :: zarif98sjs — zarif98sjs</title>
+    <title>LightOj 1096 (nth Term) :: Convoluted Mess — Md. Zarif Ul Alam</title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 <meta name="description" content="Idea  Matrix Exponential
  Matrix Expo Resource One thing to notice is that here the power will be n-2  /* Which of the favors of your Lord will you deny? */ #include&amp;lt;bits/stdc&#43;&#43;.h&amp;gt;using namespace std; #define MAX 100050  #define LL long long #define PII pair&amp;lt;int,int&amp;gt; #define MP make_pair #define F first #define S second  #define N 4  int base[4][4] = {{-1,0,-1,1},{1,0,0,0},{0,1,0,0},{0,0,0,1}}, unit[4][4]; int mod=10007; void multiply(int a[N][N], int b[N][N]) { int mul[N][N]; for (int i = 0; i &amp;lt; N; i&#43;&#43;) { for (int j = 0; j &amp;lt; N; j&#43;&#43;) { mul[i][j] = 0; for (int k = 0; k &amp;lt; N; k&#43;&#43;) mul[i][j] &#43;= (a[i][k]*b[k][j])%mod; } } // for (int i=0; i&amp;lt;N; i&#43;&#43;)  // for (int j=0; j&amp;lt;N; j&#43;&#43;)  // a[i][j] = mul[i][j];  memcpy(a,mul,sizeof mul); } void fast_mat_expo(int r[N][N],int n) { int b[4][4]; memcpy(r, unit, sizeof unit); memcpy(b, base, sizeof base); while(n&amp;gt;0) { if(n&amp;amp;1)//odd  multiply(r,b); n&amp;gt;&amp;gt;=1; multiply(b,b); } } int powa(int x,int y) { if(y==0) return 1; int temp = powa(x,y/2); if((y&amp;amp;1)==0) // (y%2==0) // LL korle 1LL  return temp*temp; else return x*temp*temp; } int main() { //freopen(&amp;#34;LightOj1093." />
-<meta name="keywords" content="" />
+<meta name="keywords" content="[Zarif Algorithm Blog Data Structure]" />
 <meta name="robots" content="noodp" />
 <link rel="canonical" href="https://zarif98sjs.github.io/blog/blog/lightoj1096/" />
 
@@ -37,7 +37,7 @@
 
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="LightOj 1096 (nth Term) :: zarif98sjs">
+<meta property="og:title" content="LightOj 1096 (nth Term) :: Convoluted Mess">
 <meta property="og:description" content="nth Term" />
 <meta property="og:url" content="https://zarif98sjs.github.io/blog/blog/lightoj1096/" />
 <meta property="og:site_name" content="LightOj 1096 (nth Term)" />
@@ -95,10 +95,6 @@
         
       
         
-          <li><a href="https://zarif98sjs.github.io/skills/">Skills</a></li>
-        
-      
-        
           <li><a href="/blog/memento/">Memento</a></li>
         
       
@@ -120,10 +116,6 @@
     
       
         <li><a href="https://zarif98sjs.github.io/projects/">Projects</a></li>
-      
-    
-      
-        <li><a href="https://zarif98sjs.github.io/skills/">Skills</a></li>
       
     
       

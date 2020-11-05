@@ -40,10 +40,10 @@ paginate = 5
 [languages]
   [languages.en]
     languageName = "English"
-    title = "zarif98sjs"
-    subtitle = "zarif98sjs"
+    title = "Convoluted Mess"
+    subtitle = "Md. Zarif Ul Alam"
     owner = ""
-    keywords = ""
+    keywords = ["Zarif","Algorithm","Blog","Data Structure"]
     copyright = ""
     menuMore = "Show more"
     readMore = "Read more"
@@ -64,11 +64,11 @@ paginate = 5
         name = "Projects"
         url = "https://zarif98sjs.github.io/projects/"
         weight = 2
-      [[languages.en.menu.main]]
-        identifier = "skills"
-        name = "Skills"
-        url = "https://zarif98sjs.github.io/skills/"
-        weight = 3
+      # [[languages.en.menu.main]]
+      #   identifier = "skills"
+      #   name = "Skills"
+      #   url = "https://zarif98sjs.github.io/skills/"
+      #   weight = 3
       [[languages.en.menu.main]]
         identifier = "memento"
         name = "Memento"
